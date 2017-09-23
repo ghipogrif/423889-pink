@@ -3,10 +3,115 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" stylesheet="style">
   </head>
   <body>
+    <div class="container">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <header class="header-page">
+        <nav class="header__navigation">
+          <a class="header__logo">
+            <img class="logo__image" src="#" alt="">
+          </a>
+          <button class="header__toogle" type="button">Открыть меню</button>
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#">Главная</a></li>
+            <li class="header__item"><a class="header__link header__link--active" href="#">Фотографии</a></li>
+            <li class="header__item"><a class="header__link" href="#">Конкурс</a></li>
+            <li class="header__item"><a class="header__link" href="#">Html academy</a></li>
+          </ul>
+          <div class="header__image"></div>
+          <div class="header__application">
+            <a class="application-download" href="#">Скачать приложение</a>
+            <ul class="application__list">
+              <li class="application__item"><img class="application__image" src="#" alt="IOS"></li>
+              <li class="application__item"><img class="application__image" src="#" alt="Android"></li>
+              <li class="application__item"><img class="application__image" src="#" alt="Windows Phone"></li>
+            </ul>
+            <p class="application-description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </nav>
+      </header>
 
+      <main class="main__page">
+
+        <h2 class="main__title">Устали от серости мегаполиса?</h2>  <!-- Не лучше ли div>span? -->
+        <h2 class="main__title">Нам есть, что вам предложить!</h2>
+
+        <section class="main__advantage">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantage__list">
+            <li class="advantage__item">
+              <h3 class="advantage__title">Поднимает настроение</h3>
+              <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantage__item">
+              <h3 class="advantage__title">Меняет мир вокруг</h3>
+              <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantage__item">
+              <h3 class="advantage__title">Заводит новых друзей</h3>
+              <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="advantage__screen"></div>
+        </section>
+
+        <section class="reviews__section">
+          <div class="review__info">
+            <h3 class="reviews__title">Николай Петров</h3>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="rewiew__menu scroll__point"></div>
+        </section>
+
+        <section class="package__section">
+          <div class="package__card">
+            <div class="package__header">
+              <h3 class="package__title">Стандарт</h3>
+              <span class="package__price">3,99 USD</span>
+            </div>
+            <div class="package__info">
+              <h3 class="visually-hidden">Что входит в пакет?</h3>
+              <table class="package__table">
+                <tr class="table__title">
+                  <th class="title__item">Розовый фильтр</th>
+                  <th class="title__item">Смайлики</th>
+                  <th class="title__item">Комментарии</th>
+                </tr>
+                <tr class="table__check">
+                  <td class="check__state"><img class="" alt=""></td>
+                  <td class="check__state"><img class="" alt=""></td>
+                  <td class="check__state"><img class="" alt=""></td>
+                </tr>
+              </table>
+            </div>
+            <div class="scroll__point"></div>
+          </div>
+        </section>
+
+        <section class="contacts__section">
+          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__name">Звоните:</h3>
+              <p class="contacts__text">+7 (812) 555-66-66</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__name">Пишите:</h3>
+              <p class="contacts__text">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__name">Приезжайте в гости:</h3>
+              <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+          <div class="div contacs__map"></div>
+        </section>
+      </main>
+
+      <footer></footer>
+
+    </div>
   </body>
 </html>
