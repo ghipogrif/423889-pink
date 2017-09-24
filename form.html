@@ -27,27 +27,28 @@
     </header>
 
     <main class="page-form">
+      <div class="page-form__title-block">
       <p class="page-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <div class="page-form__form form">
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__block name">
             <legend class="visually-hidden">Введи ваше полное имя</legend>
             <p class="name__field">
-              <label class="name__label" for="surname">Фамилия:</label>
-              <input class="name__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" value="">
+              <label class="name__label input-title" for="surname">Фамилия:</label>
+              <input class="name__input input-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" value="">
             </p>
             <p class="name__field">
-              <label class="name__label" for="name">Имя:</label>
-              <input class="name__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" value="">
+              <label class="name__label input-title" for="name">Имя:</label>
+              <input class="name__input input-field" type="text" id="name" name="name" placeholder="Введите ваше имя *" value="">
             </p>
             <p class="name__field">
-              <label class="name__label" for="patronymic">Отчество:</label>
-              <input class="name__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
+              <label class="name__label input-title" for="patronymic">Отчество:</label>
+              <input class="name__input input-field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
             </p>
           </fieldset>
 
           <fieldset class="form__block achievements">
-            <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="achievements__title input-title">Ваши безбашенные достижения в путешествии</legend>
             <p class="achievements__checkbox-field">
               <input class="achievements__form" type="checkbox" name="checkbox" value="shark_photo" id="shark_photo" checked>
               <label class="achievements__label" for="shark_photo">Сделал селфи с акулой</label>
@@ -77,17 +78,17 @@
           <fieldset class="form__block contacts">
             <legend class="visually-hidden">Оставьте ваши контакты</legend>
             <p class="contacts__field">
-              <label class="contacts__label" for="number-phone">Номер телефона</label>
-              <input class="contacts__form" type="tel" placeholder="Номер, пожалуйста" id="number-phone" name="number-phone" value="">
+              <label class="contacts__label input-title" for="number-phone">Номер телефона</label>
+              <input class="contacts__form input-field" type="tel" placeholder="Номер, пожалуйста" id="number-phone" name="number-phone" value="">
             </p>
             <p class="contacts__field">
-              <label class="contacts__label" for="email">Адрес почты</label>
-              <input class="contacts__form" type="email" placeholder="Введите почту *" id="email" name="email" value="">
+              <label class="contacts__label input-title" for="email">Адрес почты</label>
+              <input class="contacts__form input-field" type="email" placeholder="Введите почту *" id="email" name="email" value="">
             </p>
           </fieldset>
 
           <fieldset class="form__application application">
-            <legend class="application__title">С каким приложением путешествовали?</legend>
+            <legend class="application__title input-title">С каким приложением путешествовали?</legend>
             <p class="application__field">
               <input class="application__radio" type="radio" id="ios" name="radio" value="ios">
               <label class="application__label" for="ios">Pink для iOS</label>
@@ -104,8 +105,8 @@
 
           <fieldset class="form__emotion emotion">
             <p class="emotion__field">
-              <legend class="emotion__title">Опишите свои эмоции</legend>
-              <textarea class="emotion__form" name="" id="" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <label class="emotion__title input-title" id="emotion-text">Опишите свои эмоции</label>
+              <textarea class="emotion__form input-field" name="" id="emotion-text" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </p>
 

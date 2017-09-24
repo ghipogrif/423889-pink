@@ -34,6 +34,7 @@
     </header>
 
     <main class="page-main">
+      <h1 class="visually-hidden">Почему именно Pink?</h1>
       <section class="page-main__header">
         <p class="page-main__title">Устали от серости мегаполиса?</p>
         <p class="page-main__title">Нам есть, что вам предложить!</p>
@@ -79,6 +80,25 @@
 
       <section class="page-main__package package">
         <h2 class="visually-hidden">Оформи подписку!</h2>
+        <div class="package__table-block">
+          <table class="package__table table-package">
+            <tr class="table-package__header-block">
+              <th>
+                <h3 class="table-package__title">Стандарт</h3>
+                <span class="table-package__price">3,99 USD</span>
+              </th>
+            </tr>
+            <tr class="table-package__description-block">
+              <td class="table-package__description">Розовый фильтр</td>
+              <td class="table-package__description">Смайлики</td>
+              <td class="table-package__description">Комментарии</td>
+            </tr>
+          </table>
+        </div>
+
+      <!---------------  Необходимо изменить   -------------------->
+
+      <div class="package__table-block">
         <table class="package__table table-package">
           <tr class="table-package__header-block">
             <th>
@@ -92,35 +112,23 @@
             <td class="table-package__description">Комментарии</td>
           </tr>
         </table>
+      </div>
 
-      <!---------------  Необходимо изменить   -------------------->
-      <table class="package__table table-package">
-        <tr class="table-package__header-block">
-          <th>
-            <h3 class="table-package__title">Стандарт</h3>
-            <span class="table-package__price">3,99 USD</span>
-          </th>
-        </tr>
-        <tr class="table-package__description-block">
-          <td class="table-package__description">Розовый фильтр</td>
-          <td class="table-package__description">Смайлики</td>
-          <td class="table-package__description">Комментарии</td>
-        </tr>
-      </table>
-
-      <table class="package__table table-package">
-        <tr class="table-package__header-block">
-          <th>
-            <h3 class="table-package__title">Стандарт</h3>
-            <span class="table-package__price">3,99 USD</span>
-          </th>
-        </tr>
-        <tr class="table-package__description-block">
-          <td class="table-package__description">Розовый фильтр</td>
-          <td class="table-package__description">Смайлики</td>
-          <td class="table-package__description">Комментарии</td>
-        </tr>
-      </table>
+      <div class="package__table-block">
+        <table class="package__table table-package">
+          <tr class="table-package__header-block">
+            <th>
+              <h3 class="table-package__title">Стандарт</h3>
+              <span class="table-package__price">3,99 USD</span>
+            </th>
+          </tr>
+          <tr class="table-package__description-block">
+            <td class="table-package__description">Розовый фильтр</td>
+            <td class="table-package__description">Смайлики</td>
+            <td class="table-package__description">Комментарии</td>
+          </tr>
+        </table>
+      </div>
 
       <!---------------  Необходимо изменить   -------------------->
 
@@ -131,9 +139,15 @@
           <input type="radio" id="third-point">
         </div>
         <div class="scroll-point__field">
-          <label class="scroll-point__point" for="first-point"></label>
-          <label class="scroll-point__point" for="second-point"></label>
-          <label class="scroll-point__point" for="third-point"></label>
+          <label class="scroll-point__point" for="first-point">
+            <span class="visually-hidden"></span>            <!-- Добавить пакет -->
+          </label>
+          <label class="scroll-point__point" for="second-point">
+            <span class="visually-hidden">Стандарт</span>
+          </label>
+          <label class="scroll-point__point" for="third-point">
+            <span class="visually-hidden"></span>            <!-- Добавить пакет -->
+          </label>
         </div>
       </div>
       </section>
