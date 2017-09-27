@@ -26,94 +26,114 @@
       </div>
     </header>
 
-    <main class="page-form">
-      <div class="page-form__title-block">
-      <p class="page-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      <div class="page-form__form form">
+    <main class="">
+      <div class="title-form">
+        <p class="title-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      </div>
+      <div class="form">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__block name">
+          <fieldset class="form__block fieldset">
             <legend class="visually-hidden">Введи ваше полное имя</legend>
-            <p class="name__field">
-              <label class="name__label input-title" for="surname">Фамилия:</label>
-              <input class="name__input input-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" value="">
+            <p class="fieldset__field">
+              <label class="fieldset__label" for="surname">Фамилия:</label>
+              <input class="fieldset__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" value="">
             </p>
-            <p class="name__field">
-              <label class="name__label input-title" for="name">Имя:</label>
-              <input class="name__input input-field" type="text" id="name" name="name" placeholder="Введите ваше имя *" value="">
+            <p class="fieldset__field">
+              <label class="fieldset__label" for="name">Имя:</label>
+              <input class="fieldset__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" value="">
             </p>
-            <p class="name__field">
-              <label class="name__label input-title" for="patronymic">Отчество:</label>
-              <input class="name__input input-field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
-            </p>
-          </fieldset>
-
-          <fieldset class="form__block achievements">
-            <legend class="achievements__title input-title">Ваши безбашенные достижения в путешествии</legend>
-            <p class="achievements__checkbox-field">
-              <input class="achievements__form" type="checkbox" name="checkbox" value="shark_photo" id="shark_photo" checked>
-              <label class="achievements__label" for="shark_photo">Сделал селфи с акулой</label>
-            </p>
-            <p class="achievements__checkbox-field">
-              <input class="achievements__form" type="checkbox" name="checkbox" value="beach_photo" id="beach_photo" checked>
-              <label class="achievements__label" for="beach_photo">Обгорел на пляже</label>
-            </p>
-            <p class="achievements__checkbox-field">
-              <input class="achievements__form" type="checkbox" name="checkbox" value="norris-photo" id="norris-photo">
-              <label class="achievements__label" for="norris-photo">Видел Чака Норриса</label>
-            </p>
-            <p class="achievements__checkbox-field">
-              <input class="achievements__form" type="checkbox" name="checkbox" value="souvenirs-photo" id="souvenirs-photo">
-              <label class="achievements__label" for="souvenirs-photo">Накупил сувениров</label>
-            </p>
-            <p class="achievements__checkbox-field">
-              <input class="achievements__form" type="checkbox" name="checkbox" value="tower-photo" id="tower-photo" checked>
-              <label class="achievements__label" for="tower-photo">Удержал башню</label>
-            </p>
-            <p class="achievements__checkbox-field">
-              <input class="achievements__form" type="checkbox" name="checkbox" value="hotel-photo" id="hotel-photo">
-              <label class="achievements__label" for="hotel-photo">Разгромил отель</label>
+            <p class="fieldset__field">
+              <label class="fieldset__label" for="patronymic">Отчество:</label>
+              <input class="fieldset__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
             </p>
           </fieldset>
 
-          <fieldset class="form__block contacts">
+          <fieldset class="form__block fieldset-choice">
+            <legend class="fieldset-choice__title">Ваши безбашенные достижения в путешествии</legend>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choicet__input" type="checkbox" name="shark_photo" id="shark_photo" checked>
+              <label class="fieldset-choice__label" for="shark_photo">Сделал селфи с акулой</label>
+            </p>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="checkbox" name="beach_photo" id="beach_photo" checked>
+              <label class="fieldset-choice__label" for="beach_photo">Обгорел на пляже</label>
+            </p>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="checkbox" name="norris-photo" id="norris-photo">
+              <label class="fieldset-choice__label" for="norris-photo">Видел Чака Норриса</label>
+            </p>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="checkbox" name="souvenirs-photo" id="souvenirs-photo">
+              <label class="fieldset-choice__label" for="souvenirs-photo">Накупил сувениров</label>
+            </p>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="checkbox" name="tower-photo" id="tower-photo" checked>
+              <label class="fieldset-choice__label" for="tower-photo">Удержал башню</label>
+            </p>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="checkbox" name="hotel-photo" id="hotel-photo">
+              <label class="fieldset-choice__label" for="hotel-photo">Разгромил отель</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__block fieldset">
             <legend class="visually-hidden">Оставьте ваши контакты</legend>
-            <p class="contacts__field">
-              <label class="contacts__label input-title" for="number-phone">Номер телефона</label>
-              <input class="contacts__form input-field" type="tel" placeholder="Номер, пожалуйста" id="number-phone" name="number-phone" value="">
+            <p class="fieldset__field">
+              <label class="fieldset__label" for="number-phone">Номер телефона</label>
+              <input class="fieldset__input" type="tel" placeholder="Номер, пожалуйста" id="number-phone" name="number-phone" value="">
             </p>
-            <p class="contacts__field">
-              <label class="contacts__label input-title" for="email">Адрес почты</label>
-              <input class="contacts__form input-field" type="email" placeholder="Введите почту *" id="email" name="email" value="">
-            </p>
-          </fieldset>
-
-          <fieldset class="form__application application">
-            <legend class="application__title input-title">С каким приложением путешествовали?</legend>
-            <p class="application__field">
-              <input class="application__radio" type="radio" id="ios" name="radio" value="ios">
-              <label class="application__label" for="ios">Pink для iOS</label>
-            </p>
-            <p class="application__field">
-              <input class="application__radio" type="radio" id="android" name="radio" value="android">
-              <label class="application__label" for="android">Pink на Android</label>
-            </p>
-            <p class="application__field">
-              <input class="application__radio" type="radio" id="windows" name="radio" value="windows">
-              <label class="application__label" for="windows">Windows Phone</label>
+            <p class="fieldset__field">
+              <label class="fieldset__label" for="email">Адрес почты</label>
+              <input class="fieldset__input" type="email" placeholder="Введите почту *" id="email" name="email" value="">
             </p>
           </fieldset>
 
-          <fieldset class="form__emotion emotion">
-            <p class="emotion__field">
-              <label class="emotion__title input-title" id="emotion-text">Опишите свои эмоции</label>
-              <textarea class="emotion__form input-field" name="" id="emotion-text" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="form__block fieldset-choice">
+            <legend class="fieldset-choice__title">С каким приложением путешествовали?</legend>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="radio" id="ios" name="radio" value="ios">
+              <label class="fieldset-choice__label" for="ios">Pink для iOS</label>
+            </p>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="radio" id="android" name="radio" value="android">
+              <label class="fieldset-choice__label" for="android">Pink на Android</label>
+            </p>
+            <p class="fieldset-choice__field">
+              <input class="fieldset-choice__input" type="radio" id="windows" name="radio" value="windows">
+              <label class="fieldset-choice__label" for="windows">Windows Phone</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__block fieldset">
+            <p class="fieldset__field">
+              <h3 class="fieldset__title" id="emotion-text">Опишите свои эмоции</h3>
+              <textarea class="fieldset__input" name="" id="emotion-text" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </p>
 
-          <div class="form__submit submit">
-            <input class="submit__button" type="submit" value="Отправить форму">
+          <div class="form__post submit">
+            <div class="submit__button-block form-button-block">
+              <input class="submit__button form-button" type="submit" value="Отправить форму">
+            </div>
             <p class="submit__required">* — обязательные поля</p>
           </div>
+
+          <div class="form__modal form-modal">
+            <h3 class="form-modal__title">Что-то пошло не так!</h3>
+            <p class="form-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <div class="form-modal__button form-button-block">
+              <button class="form-button" type="button">Ок</button>
+            </div>
+          </div>
+
+          <div class="form__modal modal">
+            <h3 class="form-modal__title">Ваша заявка отправлена</h3>
+            <p class="form-modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <div class="form-modal__button form-button-block">
+              <button class="form-button" type="button">Закрыть окно</button>
+            </div>
+          </div>
+
         </form>
       </div>
     </main>
@@ -122,6 +142,7 @@
       <div class="page-footer__logo">
         Pink
       </div>
+
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__list">
@@ -143,9 +164,9 @@
         </ul>
       </div>
 
-      <div class="page-footer__copyright copyright">
+      <div class="page-footer__copyright">
         Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">htmlacademy</span>
         </a>
       </div>
