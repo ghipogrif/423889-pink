@@ -13,16 +13,16 @@
         </a>
         <nav class="page-header__navigation navigation">
           <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="#">Главная</a></li>
-            <li class="navigation__item"><a class="navigationr__link navigation__link--active" href="#">Фотографии</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Конкурс</a></li>
+            <li class="navigation__item"><a class="navigation__link">Главная</a></li>
+            <li class="navigation__item"><a class="navigationr__link navigation__link--active" href="photo.html">Фотографии</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">Html academy</a></li>
           </ul>
         </nav>
         <button class="page-header__toogle" type="button">Открыть меню</button>
       </div>
       <div class="page-header__application application">
-        <a class="application_download button-link" href="#">Скачать приложение</a>
+        <a class="application__download button-link" href="#">Скачать приложение</a>
         <ul class="application__list">
           <li class="application__item"><a class="application__link" href="#"><img class="application__image" src="#" alt="IOS"></a></li>
           <li class="application__item"><a class="application__link" href="#"><img class="application__image" src="#" alt="Android"></a></li>
@@ -58,96 +58,70 @@
       </section>
 
       <section class="reviews"> <!-- Скрытый заголовок -->
-        <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
-            <cite class="reviews__title">Николай Петров</cite> <!-- blocquote  cite-->
-            <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-          </li>
-          <li class="reviews__item slider__item">
-            <cite class="reviews__title"></cite>
-            <blockquote class="reviews__text"></blockquote>
-          </li>
-          <li class="reviews__item slider__item">
-            <cite class="reviews__title"></cite>
-            <blockquote class="reviews__text"></blockquote>
-          </li>
-        </ul>
-        <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <cite class="reviews__title">Николай Петров</cite> <!-- blocquote  cite-->
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <cite class="reviews__title"></cite>
+              <blockquote class="reviews__text"></blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <cite class="reviews__title"></cite>
+              <blockquote class="reviews__text"></blockquote>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle" type="button">1</button>
+              <button class="slider__toggle" type="button">2</button>
+              <button class="slider__toggle" type="button">3</button>
+            </p>
+        </div>
       </section>
 
       <section class="package">
         <h2 class="visually-hidden">Оформи подписку!</h2>
-        <div class="package__table-block">
-          <ul class="package__list slider__list">
-            <li class="package__item slider__item">
-              <table class="package__table">
-                <tr class="package__header-block">
-                  <th>
-                    <span class="package__title">Стандарт</span>
-                    <span class="package__price">3,99 USD</span>
-                  </th>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Розовый фильтр</td>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Смайлики</td>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Комментарии</td>
-                </tr>
-              </table>
-            </li>
+        <div class="package__table-block slider">
+          <table class="package__table">
+            <tr class="package__header-block">
+              <th>
+                <span class="package__title"></span>
+                <span class="package__price"></span>
+              </th>
+              <th>
+                <span class="package__title">Стандарт</span>
+                <span class="package__price">3,99 USD</span>
+              </th>
+              <th>
+                <span class="package__title"></span>
+                <span class="package__price"></span>
+              </th>
+            </tr>
+            <tr class="package__description-block">
+              <td class="package__description"></td>
+              <td class="package__description">Розовый фильтр</td>
+              <td class="package__description"></td>
+            </tr>
+            <tr>
+              <td class="package__description"></td>
+              <td class="package__description">Смайлики</td>
+              <td class="package__description"></td>
+            </tr>
+            <tr>
+              <td class="package__description"></td>
+              <td class="package__description">Комментарии</td>
+            <td class="package__description"></td>
+          </tr>
+          </table>
 
-        <!---------------  Необходимо изменить   -------------------->
+        <!---  Необходимо изменить   -------------------->
 
-            <li class="package__item slider__item">
-              <table class="package__table">
-                <tr class="package__header-block">
-                  <th>
-                    <span class="package__title">Стандарт</span>
-                    <span class="package__price">3,99 USD</span>
-                  </th>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Розовый фильтр</td>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Смайлики</td>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Комментарии</td>
-                </tr>
-              </table>
-            </li>
 
-            <li class="package__item slider__item">
-              <table class="package__table">
-                <tr class="package__header-block">
-                  <th>
-                    <span class="package__title">Стандарт</span>
-                    <span class="package__price">3,99 USD</span>
-                  </th>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Розовый фильтр</td>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Смайлики</td>
-                </tr>
-                <tr class="package__description-block">
-                  <td class="package__description">Комментарии</td>
-                </tr>
-              </table>
-            </li>
-          </ul>
       <!---  Необходимо изменить   ----->
-          <p class="package_toggles slider__toggles">
+          <p class="package__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -160,11 +134,11 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <h3 class="contacts__name">Звоните:</h3>
-            <a class="contacts__text" href="#">+7 (812) 555-66-66</a>
+            <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__name">Пишите:</h3>
-            <a class="contacts__text" href="#">mail@htmlacademy.ru</a>
+            <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__name">Приезжайте в гости:</h3>

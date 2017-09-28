@@ -13,22 +13,20 @@
         </a>
         <nav class="page-header__navigation navigation">
           <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="#">Главная</a></li>
-            <li class="navigation__item"><a class="navigationr__link navigation__link--active" href="#">Фотографии</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Конкурс</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
+            <li class="navigation__item"><a class="navigationr__link navigation__link--active" href="photo.html">Фотографии</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#">Html academy</a></li>
           </ul>
         </nav>
         <button class="page-header__toogle" type="button">Открыть меню</button>
       </div>
-      <div class="page-header__background">
-        <h1 class="page-header__background-title">Фотографии пользователей</h1>
-      </div>
+      <h1 class="page-header__background-title">Фотографии пользователей</h1>
     </header>
 
     <main>
       <div class="title-photo">
-        <h2 class="title-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <p class="title-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
 
       <section class="card">
@@ -36,7 +34,6 @@
           <li class="card__item">
             <div class="card__container-image">
               <img class="card__photo>" src="#" alt="">
-              <span class="card__top-field">Панорама дня</span>
             </div>
             <div class="card__info">
               <span class="card__name">Анна</span>
@@ -128,36 +125,40 @@
       </section>
 
       <div class="title-photo">
-        <h3 class="title-photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+        <p class="title-photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </div>
 
       <section class="editor">
         <div class="editor__container">
-          <form action="https://echo.htmlacademy.ru">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <img class="editor__image" src="#" alt="">
             <ul class="editor__list-edit">
               <li class="editor__item-button">
-                <label for="cut" class="visually-hidden">Обрезать</label>
-                <input class="editor__radio" type="radio" id="cut">
+                <label class="editor__label" for="cut">
+                  <span class="visually-hidden">Обрезать</span>
+                </label>
+                <input class="visually-hidden" type="radio" id="cut">
               </li>
               <li class="editor__item-button">
-                <label for="cut" class="visually-hidden">Цвет</label>
-                <input class="editor__radio" type="radio" id="cut">
+                <label class="editor__label" for="cut">
+                  <span class="visually-hidden">Цвет</span>
+                </label>
+                <input class="visually-hidden" type="radio" id="cut">
               </li>
               <li class="editor__item-button">
-                <label for="cut" class="visually-hidden">Контраст</label>
-                <input class="editor__radio" type="radio" id="cut">
+                <label class="editor__label" for="cut">
+                  <span class="visually-hidden">Контраст</span>
+                </label>
+                <input class="visually-hidden" type="radio" id="cut">
               </li>
             </ul>
             <div class="editor__range-controls">
               <div class="editor__scale">
-                <div class="editor__bar"></div>
-              </div>
-              <div class="editor__range-toggle">
+                <div class="editor__range-toggle"></div>
             </div>
             <ul class="editor__list-post">
-              <li class="editor__button-link"><input class="editor__post button-link" href="#">Запостить</input></li>
-              <li class="editor__button-link"><input class="editor__annulment button-link" href="#">Отмена</input></li>
+              <li class="editor__button-link"><input class="editor__post button-link" type="submit" href="#">Запостить</input></li>
+              <li class="editor__button-link"><input class="editor__annulment button-link" type="reset" href="#">Отмена</input></li>
             </ul>
           </form>
         </div>
@@ -166,7 +167,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__logo">
-        Pink
+        <a class="page__footer__logo-link" href="#">Pink</a>
       </div>
 
       <div class="page-footer__social social">
