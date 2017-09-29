@@ -1,9 +1,9 @@
-!<!DOCTYPE html>
-<<html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" stylesheet="style">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,10 +13,18 @@
         </a>
         <nav class="page-header__navigation navigation">
           <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-            <li class="navigation__item"><a class="navigationr__link navigation__link--active" href="photo.html">Фотографии</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Html academy</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigationr__link navigation__link--active" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Html academy</a>
+            </li>
           </ul>
         </nav>
         <button class="page-header__toogle" type="button">Открыть меню</button>
@@ -39,7 +47,7 @@
               <span class="card__name">Анна</span>
               <span class="card__time">(5 минут назад)</span>
               <p class="card__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <button class="card__like"></button>        <!-- Кнопка лайка -->
+              <button class="card__like" type="button"></button>
               <span class="card__like-quantity">Нравится: 215</span>
             </div>
           </li>
@@ -52,7 +60,7 @@
               <span class="card__name">Левон</span>
               <span class="card__time">(5 часов назад)</span>
               <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="card__like"></button>
+              <button class="card__like" type="button"></button>
               <span class="card__like-quantity">Нравится: 356</span>
             </div>
           </li>
@@ -65,7 +73,7 @@
               <span class="card__name">Антон</span>
               <span class="card__time">(12 часов назад)</span>
               <p class="card__text">Соседи будут рады!</p>
-              <button class="card__like"></button>
+              <button class="card__like" type="button"></button>
               <span class="card__like-quantity">Нравится: 666</span>
             </div>
           </li>
@@ -78,7 +86,7 @@
               <span class="card__name">Борис</span>
               <span class="card__time">(20 часов назад)</span>
               <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="card__like"></button>
+              <button class="card__like" type="button"></button>
               <span class="card__like__quantity">Нравится: 215</span>
             </div>
           </li>
@@ -91,7 +99,7 @@
               <span class="card__name">Сергей</span>
               <span class="card__time">(25 часов назад)</span>
               <p class="card__text">Самая кубанская в мире!</p>
-              <button class="card__like"></button>
+              <button class="card__like" type="button"></button>
               <span class="card__like-quantity">Нравится: 4</span>
             </div>
           </li>
@@ -104,7 +112,7 @@
               <span class="card__name">Максим</span>
               <span class="card__time">(40 часов назад)</span>
               <p class="card__text">Где снег-то?</p>
-              <button class="card__like"></button>
+              <button class="card__like" type="button"></button>
               <span class="card__like-quantity">Нравится: 150</span>
             </div>
           </li>
@@ -117,7 +125,7 @@
               <span class="card__name">Надежда</span>
               <span class="card__time">(45 часов назад)</span>
               <p class="card__text">Всем GM и взаимные лайки!</p>
-              <button class="card__like"></button>
+              <button class="card__like" type="button"></button>
               <span class="card__like-quantity">Нравится: 2560</span>
             </div>
           </li>
@@ -140,25 +148,25 @@
                 <input class="visually-hidden" type="radio" id="cut">
               </li>
               <li class="editor__item-button">
-                <label class="editor__label" for="cut">
+                <label class="editor__label" for="color">
                   <span class="visually-hidden">Цвет</span>
                 </label>
-                <input class="visually-hidden" type="radio" id="cut">
+                <input class="visually-hidden" type="radio" id="color">
               </li>
               <li class="editor__item-button">
-                <label class="editor__label" for="cut">
+                <label class="editor__label" for="contrast">
                   <span class="visually-hidden">Контраст</span>
                 </label>
-                <input class="visually-hidden" type="radio" id="cut">
+                <input class="visually-hidden" type="radio" id="contrast">
               </li>
             </ul>
             <div class="editor__range-controls">
               <div class="editor__scale">
                 <div class="editor__range-toggle"></div>
             </div>
-            <ul class="editor__list-post">
-              <li class="editor__button-link"><input class="editor__post button-link" type="submit" href="#">Запостить</input></li>
-              <li class="editor__button-link"><input class="editor__annulment button-link" type="reset" href="#">Отмена</input></li>
+            <div class="editor__post-container">
+              <p class="editor__button-link"><input class="editor__post button-link" type="submit" href="#" value="Запостить"></p>
+              <p class="editor__button-link"><input class="editor__annulment button-link" type="reset" href="#" value="Отмена"></p>
             </ul>
           </form>
         </div>
@@ -166,9 +174,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__logo">
-        <a class="page__footer__logo-link" href="#">Pink</a>
-      </div>
+      <a class="page__footer__logo-link" href="#">Pink</a>
 
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>

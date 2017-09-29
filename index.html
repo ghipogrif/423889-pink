@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" stylesheet="style">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,10 +13,18 @@
         </a>
         <nav class="page-header__navigation navigation">
           <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link">Главная</a></li>
-            <li class="navigation__item"><a class="navigationr__link navigation__link--active" href="photo.html">Фотографии</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="form.html">Конкурс</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#">Html academy</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigationr__link navigation__link--active" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Html academy</a>
+            </li>
           </ul>
         </nav>
         <button class="page-header__toogle" type="button">Открыть меню</button>
@@ -24,9 +32,21 @@
       <div class="page-header__application application">
         <a class="application__download button-link" href="#">Скачать приложение</a>
         <ul class="application__list">
-          <li class="application__item"><a class="application__link" href="#"><img class="application__image" src="#" alt="IOS"></a></li>
-          <li class="application__item"><a class="application__link" href="#"><img class="application__image" src="#" alt="Android"></a></li>
-          <li class="application__item"><a class="application__link" href="#"><img class="application__image" src="#" alt="Windows Phone"></a></li>
+          <li class="application__item">
+            <a class="application__link" href="#">
+              <img class="application__image" src="#" alt="IOS">
+            </a>
+          </li>
+          <li class="application__item">
+            <a class="application__link" href="#">
+              <img class="application__image" src="#" alt="Android">
+            </a>
+          </li>
+          <li class="application__item">
+            <a class="application__link" href="#">
+              <img class="application__image" src="#" alt="Windows Phone">
+            </a>
+          </li>
         </ul>
         <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -66,18 +86,18 @@
               <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </li>
             <li class="reviews__item slider__item">
-              <cite class="reviews__title"></cite>
-              <blockquote class="reviews__text"></blockquote>
+              <cite class="reviews__title">Николай Петров</cite>
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир»</blockquote>
             </li>
             <li class="reviews__item slider__item">
-              <cite class="reviews__title"></cite>
-              <blockquote class="reviews__text"></blockquote>
+              <cite class="reviews__title">Василий Иванов</cite>
+              <blockquote class="reviews__text">«Крутое приложение!»</blockquote>
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
             </p>
         </div>
       </section>
@@ -88,39 +108,34 @@
           <table class="package__table">
             <tr class="package__header-block">
               <th>
-                <span class="package__title"></span>
-                <span class="package__price"></span>
+                <span class="package__title">Стандарт</span>
+                <span class="package__price">3,99 USD</span>
               </th>
               <th>
                 <span class="package__title">Стандарт</span>
                 <span class="package__price">3,99 USD</span>
               </th>
               <th>
-                <span class="package__title"></span>
-                <span class="package__price"></span>
+                <span class="package__title">Стандарт</span>
+                <span class="package__price">3,99 USD</span>
               </th>
             </tr>
             <tr class="package__description-block">
-              <td class="package__description"></td>
               <td class="package__description">Розовый фильтр</td>
-              <td class="package__description"></td>
+              <td class="package__description">Розовый фильтр</td>
+              <td class="package__description">Розовый фильтр</td>
             </tr>
             <tr>
-              <td class="package__description"></td>
               <td class="package__description">Смайлики</td>
-              <td class="package__description"></td>
+              <td class="package__description">Смайлики</td>
+              <td class="package__description">Смайлики</td>
             </tr>
             <tr>
-              <td class="package__description"></td>
               <td class="package__description">Комментарии</td>
-            <td class="package__description"></td>
-          </tr>
+              <td class="package__description">Комментарии</td>
+              <td class="package__description">Комментарии</td>
+            </tr>
           </table>
-
-        <!---  Необходимо изменить   -------------------->
-
-
-      <!---  Необходимо изменить   ----->
           <p class="package__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
@@ -133,15 +148,15 @@
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <h3 class="contacts__name">Звоните:</h3>
+            <p class="contacts__name">Звоните:</p>
             <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__name">Пишите:</h3>
+            <p class="contacts__name">Пишите:</p>
             <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__name">Приезжайте в гости:</h3>
+            <p class="contacts__name">Приезжайте в гости:</p>
             <a class="contacts__text" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
