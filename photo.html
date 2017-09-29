@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__menu">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="#" alt="">
+        </a>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigationr__link navigation__link--active" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Html academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="page-header__toogle" type="button">Открыть меню</button>
+      </div>
+      <h1 class="page-header__background-title">Фотографии пользователей</h1>
+    </header>
+
+    <main>
+      <div class="title-photo">
+        <p class="title-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+
+      <section class="card">
+        <ul class="card__list">
+          <li class="card__item">
+            <div class="card__container-image">
+              <img class="card__photo>" src="#" alt="">
+            </div>
+            <div class="card__info">
+              <span class="card__name">Анна</span>
+              <span class="card__time">(5 минут назад)</span>
+              <p class="card__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <button class="card__like" type="button"></button>
+              <span class="card__like-quantity">Нравится: 215</span>
+            </div>
+          </li>
+
+          <li class="card__item">
+            <div class="card__container-image">
+              <img class="card__photo>" src="#" alt="">
+            </div>
+            <div class="card__info">
+              <span class="card__name">Левон</span>
+              <span class="card__time">(5 часов назад)</span>
+              <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="card__like" type="button"></button>
+              <span class="card__like-quantity">Нравится: 356</span>
+            </div>
+          </li>
+
+          <li class="card__item">
+            <div class="card__container-image">
+              <img class="card__photo>" src="#" alt="">
+            </div>
+            <div class="card__info">
+              <span class="card__name">Антон</span>
+              <span class="card__time">(12 часов назад)</span>
+              <p class="card__text">Соседи будут рады!</p>
+              <button class="card__like" type="button"></button>
+              <span class="card__like-quantity">Нравится: 666</span>
+            </div>
+          </li>
+
+          <li class="card__item">
+            <div class="card__container-image">
+              <img class="card__photo>" src="#" alt="">
+            </div>
+            <div class="card__info">
+              <span class="card__name">Борис</span>
+              <span class="card__time">(20 часов назад)</span>
+              <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <button class="card__like" type="button"></button>
+              <span class="card__like__quantity">Нравится: 215</span>
+            </div>
+          </li>
+
+          <li class="card__item">
+            <div class="card__container-image">
+              <img class="card__photo>" src="#" alt="">
+            </div>
+            <div class="card__info">
+              <span class="card__name">Сергей</span>
+              <span class="card__time">(25 часов назад)</span>
+              <p class="card__text">Самая кубанская в мире!</p>
+              <button class="card__like" type="button"></button>
+              <span class="card__like-quantity">Нравится: 4</span>
+            </div>
+          </li>
+
+          <li class="card__item">
+            <div class="card__container-image">
+              <img class="card__photo>" src="#" alt="">
+            </div>
+            <div class="card__info">
+              <span class="card__name">Максим</span>
+              <span class="card__time">(40 часов назад)</span>
+              <p class="card__text">Где снег-то?</p>
+              <button class="card__like" type="button"></button>
+              <span class="card__like-quantity">Нравится: 150</span>
+            </div>
+          </li>
+
+          <li class="card__item">
+            <div class="card__container-image">
+              <img class="card__photo>" src="#" alt="">
+            </div>
+            <div class="card__info">
+              <span class="card__name">Надежда</span>
+              <span class="card__time">(45 часов назад)</span>
+              <p class="card__text">Всем GM и взаимные лайки!</p>
+              <button class="card__like" type="button"></button>
+              <span class="card__like-quantity">Нравится: 2560</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="title-photo">
+        <p class="title-photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+
+      <section class="editor">
+        <div class="editor__container">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <img class="editor__image" src="#" alt="">
+            <ul class="editor__list-edit">
+              <li class="editor__item-button">
+                <label class="editor__label" for="cut">
+                  <span class="visually-hidden">Обрезать</span>
+                </label>
+                <input class="visually-hidden" type="radio" id="cut">
+              </li>
+              <li class="editor__item-button">
+                <label class="editor__label" for="color">
+                  <span class="visually-hidden">Цвет</span>
+                </label>
+                <input class="visually-hidden" type="radio" id="color">
+              </li>
+              <li class="editor__item-button">
+                <label class="editor__label" for="contrast">
+                  <span class="visually-hidden">Контраст</span>
+                </label>
+                <input class="visually-hidden" type="radio" id="contrast">
+              </li>
+            </ul>
+            <div class="editor__range-controls">
+              <div class="editor__scale">
+                <div class="editor__range-toggle"></div>
+            </div>
+            <div class="editor__post-container">
+              <p class="editor__button-link"><input class="editor__post button-link" type="submit" href="#" value="Запостить"></p>
+              <p class="editor__button-link"><input class="editor__annulment button-link" type="reset" href="#" value="Отмена"></p>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo-link" href="#">Pink</a>
+
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Твитер</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Фэйсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright">
+        Разработано
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">htmlacademy</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
