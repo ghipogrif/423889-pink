@@ -1,3 +1,16 @@
 .page-header {
   background-color: #293746;
+  &__background-title {
+    font-weight: lighter;
+    color: #ffffff;
+    @media @mobile { & {
+      font-size: 24px;
+    }}
+    @media @tablet { & {
+      font-size: 50px;
+    }}
+    @media @desktop { & {
+      font-size: 50px;
+    }}
+  }
 }

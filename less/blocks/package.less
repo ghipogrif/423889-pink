@@ -1,4 +1,5 @@
 .package {
+  background-color: #f2f2f2;
   &__header {
     background-color: #283645;
     color: #ffffff;
@@ -13,6 +14,25 @@
   &__description {
     font-weight: normal;
     border: 2px solid #e5e5e5;
+    position: relative;
+    &--no::after {
+      content: '';
+      display: block;
+      background-image: url(../img/icon-no.svg);
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 26px;
+      position: absolute;
+    }
+    &--yes::after {
+      content: '';
+      display: block;
+      background-image: url(../img/icon-yes.svg);
+      background-repeat: no-repeat;
+      width: 31px;
+      height: 21px;
+      position: absolute;
+    }
   }
   &__title {
     font-weight: bold;
