@@ -1,0 +1,34 @@
+.application {
+  &::before {
+    @media @mobile { & {
+      content: '';
+      display: block;
+      background-image: url(../img/bg-back-mobile@1x.jpg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 462px;
+    }}
+  }
+  &::after {
+    @media @mobile { & {
+      content: '';
+      display: block;
+      background-image: url(../img/iphone-hand-mobile@1x.png);
+      background-repeat: no-repeat;
+      width: 320px;
+      height: 314px;
+    }}
+  }
+  &__header {
+    color: #ffffff;
+    @media @mobile { & {
+      .visually-hidden
+    }}
+  }
+  &__list {
+    .list-none;
+  }
+  &__description {
+    color: #ffffff;
+  }
+}

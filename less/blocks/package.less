@@ -1,0 +1,38 @@
+.package {
+  &__header {
+    background-color: #283645;
+    color: #ffffff;
+  }
+  &__table {
+    line-height: 30px;
+    border-collapse: collapse;
+  }
+  &__header {
+    border: 2px solid #f2f2f2;
+  }
+  &__description {
+    font-weight: normal;
+    border: 2px solid #e5e5e5;
+  }
+  &__title {
+    font-weight: bold;
+    @media @mobile { & {
+      font-size: 18px;
+    }}
+    @media @mobile { & {
+      font-size: 16px;
+    }}
+  }
+  &__price {
+    font-weight: lighter;
+    @media @mobile { & {
+      font-size: 24px;
+    }}
+    @media @tablet { & {
+      font-size: 18px;
+    }}
+    @media @desktop { & {
+      font-size: 24px;
+    }}
+  }
+}
