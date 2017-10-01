@@ -10,49 +10,43 @@
   }
   &__header {
     border: 2px solid #f2f2f2;
+    width: 280px;
   }
   &__description {
+    position: relative;
+    padding: 24px 124px 24px 21px;
     font-weight: normal;
     border: 2px solid #e5e5e5;
-    position: relative;
+    text-align: left;
     &--no::after {
       content: '';
+      position: absolute;
+      bottom: 30px;
+      left: 230px;
+      width: 27px;
+      height: 26px;
       display: block;
       background-image: url(../img/icon-no.svg);
       background-repeat: no-repeat;
-      width: 27px;
-      height: 26px;
-      position: absolute;
     }
     &--yes::after {
       content: '';
+      position: absolute;
+      bottom: 30px;
+      left: 228px;
       display: block;
-      background-image: url(../img/icon-yes.svg);
-      background-repeat: no-repeat;
       width: 31px;
       height: 21px;
-      position: absolute;
+      background-image: url(../img/icon-yes.svg);
+      background-repeat: no-repeat;
     }
   }
   &__title {
     font-weight: bold;
-    @media @mobile { & {
-      font-size: 18px;
-    }}
-    @media @mobile { & {
-      font-size: 16px;
-    }}
+    font-size: 16px;
   }
   &__price {
     font-weight: lighter;
-    @media @mobile { & {
-      font-size: 24px;
-    }}
-    @media @tablet { & {
-      font-size: 18px;
-    }}
-    @media @desktop { & {
-      font-size: 24px;
-    }}
+    font-size: 24px;
   }
 }
