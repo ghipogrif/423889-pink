@@ -1,52 +1,59 @@
 .package {
   background-color: #f2f2f2;
-  &__header {
-    background-color: #283645;
-    color: #ffffff;
+  overflow: hidden;
+}
+
+.package__header {
+  background-color: #283645;
+  color: #ffffff;
+}
+
+.package__table {
+  line-height: 30px;
+  border-collapse: collapse;
+}
+
+.package__header {
+  width: 280px;
+  border: 2px solid #f2f2f2;
+}
+
+.package__description {
+  position: relative;
+  padding: 24px 124px 24px 21px;
+  font-weight: normal;
+  text-align: left;
+  border: 2px solid #e5e5e5;
+  &--no::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 230px;
+    display: block;
+    width: 27px;
+    height: 26px;
+    background-image: url('../img/icon-no.svg');
+    background-repeat: no-repeat;
   }
-  &__table {
-    line-height: 30px;
-    border-collapse: collapse;
+  &--yes::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 228px;
+    display: block;
+    width: 31px;
+    height: 21px;
+    background-image: url('../img/icon-yes.svg');
+    background-repeat: no-repeat;
   }
-  &__header {
-    border: 2px solid #f2f2f2;
-    width: 280px;
-  }
-  &__description {
-    position: relative;
-    padding: 24px 124px 24px 21px;
-    font-weight: normal;
-    border: 2px solid #e5e5e5;
-    text-align: left;
-    &--no::after {
-      content: '';
-      position: absolute;
-      bottom: 30px;
-      left: 230px;
-      width: 27px;
-      height: 26px;
-      display: block;
-      background-image: url(../img/icon-no.svg);
-      background-repeat: no-repeat;
-    }
-    &--yes::after {
-      content: '';
-      position: absolute;
-      bottom: 30px;
-      left: 228px;
-      display: block;
-      width: 31px;
-      height: 21px;
-      background-image: url(../img/icon-yes.svg);
-      background-repeat: no-repeat;
-    }
-  }
-  &__title {
-    font-weight: bold;
-    font-size: 16px;
-  }
-  &__price {
-    font-weight: lighter;
-    font-size: 24px;
-  }
+}
+
+.package__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.package__price {
+  font-weight: lighter;
+  font-size: 24px;
 }
