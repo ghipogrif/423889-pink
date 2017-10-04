@@ -4,18 +4,15 @@
 }
 
 .package__header {
-  background-color: #283645;
+  width: 280px;
   color: #ffffff;
+  background-color: #283645;
+  border: 2px solid #f2f2f2;
 }
 
 .package__table {
   line-height: 30px;
   border-collapse: collapse;
-}
-
-.package__header {
-  width: 280px;
-  border: 2px solid #f2f2f2;
 }
 
 .package__description {
@@ -24,6 +21,7 @@
   font-weight: normal;
   text-align: left;
   border: 2px solid #e5e5e5;
+
   &--no::after {
     content: "";
     position: absolute;
@@ -35,6 +33,7 @@
     background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
   }
+
   &--yes::after {
     content: "";
     position: absolute;
