@@ -1,4 +1,14 @@
+.submit {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .submit__text {
+  width: 184px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
@@ -6,4 +16,19 @@
 
 .submit__required {
   color: #d22856;
+}
+
+@media @tablet {
+  .submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+    padding-top: 67px;
+  }
+
+  .submit__text {
+    width: 177px;
+    margin: 0;
+  }
 }

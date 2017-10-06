@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--main">
       <div class="page-header__menu">
         <a class="page-header__logo">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -16,7 +16,6 @@
               <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
             </g>
           </svg>
-
         </a>
         <nav class="page-header__navigation navigation">
           <ul class="navigation__list">
@@ -56,17 +55,17 @@
         <ul class="application__list">
           <li class="application__item">
             <a class="application__link" href="#">
-              <img class="application__image" src="img/logo-apple.svg" alt="IOS">
+              <img class="application__image" src="img/logo-apple.svg" width="47" height="56" alt="IOS">
             </a>
           </li>
           <li class="application__item">
             <a class="application__link" href="#">
-              <img class="application__image" src="img/logo-android.svg" alt="Android">
+              <img class="application__image" src="img/logo-android.svg" width="43" height="47" alt="Android">
             </a>
           </li>
           <li class="application__item">
             <a class="application__link" href="#">
-              <img class="application__image" src="img/logo-microsoft.svg" alt="Windows Phone">
+              <img class="application__image" src="img/logo-microsoft.svg" width="44" height="41" alt="Windows Phone">
             </a>
           </li>
         </ul>
@@ -104,27 +103,33 @@
         <a class="study__link" href="#">Узнать больше об исследовании</a>
       </section>
 
-      <section class="reviews"> <!-- Скрытый заголовок -->
+      <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
-              <cite class="reviews__title section-title">Николай Петров</cite> <!-- blocquote  cite-->
+              <cite class="section-title reviews__title">Николай Петров</cite> <!-- blocquote  cite-->
               <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </li>
-            <li class="reviews__item slider__item">
-              <cite class="reviews__title section-title">Николай Петров</cite>
+            <li class="reviews__item slider__item" style="display:none">
+              <cite class="section-title reviews__title">Николай Петров</cite>
               <blockquote class="reviews__text">«Это приложение перевернуло мой мир»</blockquote>
             </li>
-            <li class="reviews__item slider__item">
-              <cite class="reviews__title section-title">Василий Иванов</cite>
+            <li class="reviews__item slider__item"  style="display:none">
+              <cite class="section-title reviews__title">Василий Иванов</cite>
               <blockquote class="reviews__text">«Крутое приложение!»</blockquote>
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
           </p>
         </div>
       </section>
@@ -190,7 +195,7 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title main-header">Остались вопросы? Свяжитесь с нами!</h2>
+        <h2 class="main-header contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__name">Звоните:</p>

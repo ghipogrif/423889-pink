@@ -1,8 +1,41 @@
 .title-block {
-  padding: 54px 20px 39px 20px;
+  padding-top: 45px;
+  padding-bottom: 49px;
   line-height: 30px;
+}
+
+.title-block__text {
+  margin: 0 auto;
+}
+
+.title-block__text--hidden {
+  display: none;
+}
+
+.title-block__text--photo {
+  width: 242px;
+}
+
+.title-block__text--form {
+  width: 272px;
+}
+
+.title-block--form {
+  padding-bottom: 0;
 }
 
 // @media @tablet { & {
 //   font-size: 18px;
 // }}
+
+@media @tablet {
+  .title-block__text--form {
+    width: 500px;
+    padding-top: 47px;
+    font-size: 18px;
+  }
+
+  .title-block__text--hidden {
+    display: block;
+  }
+}

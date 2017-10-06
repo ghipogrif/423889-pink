@@ -1,12 +1,15 @@
 .contacts {
-  padding-top: 50px;
-  padding-right: 20px;
-  padding-bottom: 21px;
-  padding-left: 20px;
+  padding: 42px 20px 21px;
 }
 
-.contacts__item:not(:last-child) {
-  margin-bottom: 27px;
+.contacts__item {
+  &:nth-child(1) {
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__list {
@@ -14,7 +17,7 @@
 }
 
 .contacts__name {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -25,5 +28,5 @@
 }
 
 .contacts__title {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
