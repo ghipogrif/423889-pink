@@ -24,11 +24,11 @@
   padding-bottom: 0;
 }
 
-// @media @tablet { & {
-//   font-size: 18px;
-// }}
-
 @media @tablet {
+  .title-block__text {
+    font-size: 18px;
+  }
+
   .title-block__text--form {
     width: 500px;
     padding-top: 47px;
@@ -37,5 +37,22 @@
 
   .title-block__text--hidden {
     display: block;
+  }
+}
+
+@media @desktop {
+
+  .title-block--form {
+    padding-top: 92px;
+    padding-bottom: 70px;
+  }
+
+  .title-block__text {
+    width: 760px;
+    font-size: 18px;
+  }
+
+  .title-block__text--hidden {
+    display: inline-block;
   }
 }

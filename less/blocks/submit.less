@@ -16,6 +16,10 @@
 
 .submit__required {
   color: #d22856;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 @media @tablet {
@@ -30,5 +34,26 @@
   .submit__text {
     width: 177px;
     margin: 0;
+  }
+}
+
+@media @desktop {
+  .submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
+    order: 6;
+    padding: 0;
+    padding-top: 65px;
+  }
+
+  .submit__text {
+    margin: 0;
+    width: auto;
+  }
+
+  .submit__required--hidden {
+    display: inline-block;
   }
 }

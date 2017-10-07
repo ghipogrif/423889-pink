@@ -54,84 +54,92 @@
       <div class="form">
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__block fieldset fieldset--name">
-            <p class="fieldset__field fieldset__field--name">
-              <label class="fieldset__label fieldset__label--name" for="surname">Фамилия:</label>
-              <input class="fieldset__input fieldset__input--name" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
-            </p>
-            <p class="fieldset__field fieldset__field--name">
-              <label class="fieldset__label fieldset__label--name" for="name">Имя:</label>
-              <input class="fieldset__input fieldset__input--name" type="text" id="name" name="name" placeholder="Введите ваше имя *">
-            </p>
-            <p class="fieldset__field fieldset__field--name">
-              <label class="fieldset__label fieldset__label--name" for="patronymic">Отчество:</label>
-              <input class="fieldset__input fieldset__input--name" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-            </p>
+            <div class="fielset__block--name">
+              <p class="fieldset__field fieldset__field--name">
+                <label class="fieldset__label fieldset__label--name" for="surname">Фамилия:</label>
+                <input class="fieldset__input fieldset__input--name" type="text" id="surname" name="surname" placeholder="Укажите фамилию *">
+              </p>
+              <p class="fieldset__field fieldset__field--name">
+                <label class="fieldset__label fieldset__label--name" for="name">Имя:</label>
+                <input class="fieldset__input fieldset__input--name" type="text" id="name" name="name" placeholder="Введите ваше имя *">
+              </p>
+              <p class="fieldset__field fieldset__field--name">
+                <label class="fieldset__label fieldset__label--name" for="patronymic">Отчество:</label>
+                <input class="fieldset__input fieldset__input--name" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              </p>
+            </div>
           </fieldset>
 
           <fieldset class="form__block fieldset fieldset--choice">
             <legend class="fieldset__title fieldset__title--choice">Ваши безбашенные достижения в путешествии</legend>
-            <p class="fieldset__field fieldset__field--choice">
-              <input class="fieldset__input" type="checkbox" name="shark_photo" id="shark_photo" checked>
-              <label class="fieldset__label fieldset__label--choice" for="shark_photo">Сделал селфи с акулой</label>
-            </p>
-            <p class="fieldset__field fieldset__field--choice">
-              <input class="fieldset__input" type="checkbox" name="beach_photo" id="beach_photo" checked>
-              <label class="fieldset__label fieldset__label--choice" for="beach_photo">Обгорел на пляже</label>
-            </p>
-            <p class="fieldset__field fieldset__field--choice">
-              <input class="fieldset__input" type="checkbox" name="norris-photo" id="norris-photo">
-              <label class="fieldset__label fieldset__label--choice" for="norris-photo">Видел Чака Норриса</label>
-            </p>
-            <p class="fieldset__field fieldset__field--choice">
-              <input class="fieldset__input" type="checkbox" name="souvenirs-photo" id="souvenirs-photo">
-              <label class="fieldset__label fieldset__label--choice" for="souvenirs-photo">Накупил сувениров</label>
-            </p>
-            <p class="fieldset__field fieldset__field--choice">
-              <input class="fieldset__input" type="checkbox" name="tower-photo" id="tower-photo" checked>
-              <label class="fieldset__label fieldset__label--choice" for="tower-photo">Удержал башню</label>
-            </p>
-            <p class="fieldset__field fieldset__field--choice">
-              <input class="fieldset__input" type="checkbox" name="hotel-photo" id="hotel-photo">
-              <label class="fieldset__label fieldset__label--choice" for="hotel-photo">Разгромил отель</label>
-            </p>
+            <div class="fieldset__block--choice">
+              <p class="fieldset__field fieldset__field--choice">
+                <input class="fieldset__input" type="checkbox" name="shark_photo" id="shark_photo" checked>
+                <label class="fieldset__label fieldset__label--choice" for="shark_photo">Сделал селфи с акулой</label>
+              </p>
+              <p class="fieldset__field fieldset__field--choice">
+                <input class="fieldset__input" type="checkbox" name="beach_photo" id="beach_photo" checked>
+                <label class="fieldset__label fieldset__label--choice" for="beach_photo">Обгорел на пляже</label>
+              </p>
+              <p class="fieldset__field fieldset__field--choice">
+                <input class="fieldset__input" type="checkbox" name="norris-photo" id="norris-photo">
+                <label class="fieldset__label fieldset__label--choice" for="norris-photo">Видел Чака Норриса</label>
+              </p>
+              <p class="fieldset__field fieldset__field--choice">
+                <input class="fieldset__input" type="checkbox" name="souvenirs-photo" id="souvenirs-photo">
+                <label class="fieldset__label fieldset__label--choice" for="souvenirs-photo">Накупил сувениров</label>
+              </p>
+              <p class="fieldset__field fieldset__field--choice">
+                <input class="fieldset__input" type="checkbox" name="tower-photo" id="tower-photo" checked>
+                <label class="fieldset__label fieldset__label--choice" for="tower-photo">Удержал башню</label>
+              </p>
+              <p class="fieldset__field fieldset__field--choice">
+                <input class="fieldset__input" type="checkbox" name="hotel-photo" id="hotel-photo">
+                <label class="fieldset__label fieldset__label--choice" for="hotel-photo">Разгромил отель</label>
+              </p>
+            </div>
           </fieldset>
 
           <fieldset class="form__block fieldset fieldset--contacts">
             <legend class="fieldset__title fieldset__title--contacts">Контактная информация</legend>
-            <p class="fieldset__field fieldset__field--contacts">
-              <label class="fieldset__label fieldset__label--contacts" for="number-phone">Номер телефона</label>
-              <input class="fieldset__input fieldset__input--contacts " type="tel" placeholder="Номер, пожалуйста" id="number-phone" name="number-phone">
-            </p>
-            <p class="fieldset__field fieldset__field--contacts">
-              <label class="fieldset__label fieldset__label--contacts" for="email">Адрес почты</label>
-              <input class="fieldset__input fieldset__input--contacts" type="email" placeholder="Введите почту *" id="email" name="email">
-            </p>
+            <div class="fielset__block--contacts">
+              <p class="fieldset__field fieldset__field--contacts">
+                <label class="fieldset__label fieldset__label--contacts" for="number-phone">Номер телефона</label>
+                <input class="fieldset__input fieldset__input--contacts " type="tel" placeholder="Номер, пожалуйста" id="number-phone" name="number-phone">
+              </p>
+              <p class="fieldset__field fieldset__field--contacts">
+                <label class="fieldset__label fieldset__label--contacts" for="email">Адрес почты</label>
+                <input class="fieldset__input fieldset__input--contacts" type="email" placeholder="Введите почту *" id="email" name="email">
+              </p>
+            </div>
           </fieldset>
 
           <fieldset class="form__block fieldset fieldset--radio">
             <legend class="fieldset__title fieldset__title--radio">С каким приложением путешествовали?</legend>
-            <p class="fieldset__field fieldset__field--radio">
-              <input class="fieldset__input" type="radio" id="ios" name="radio" value="ios">
-              <label class="fieldset__label fieldset__label--radio" for="ios">Pink для iOS</label>
-            </p>
-            <p class="fieldset__field fieldset__field--radio">
-              <input class="fieldset__input" type="radio" id="android" name="radio" value="android">
-              <label class="fieldset__label fieldset__label--radio" for="android">Pink на Android</label>
-            </p>
-            <p class="fieldset__field fieldset__field--radio">
-              <input class="fieldset__input" type="radio" id="windows" name="radio" value="windows">
-              <label class="fieldset__label fieldset__label--radio" for="windows">Windows Phone</label>
-            </p>
+            <div class="fielset__block--radio">
+              <p class="fieldset__field fieldset__field--radio">
+                <input class="fieldset__input" type="radio" id="ios" name="radio" value="ios">
+                <label class="fieldset__label fieldset__label--radio" for="ios">Pink для iOS</label>
+              </p>
+              <p class="fieldset__field fieldset__field--radio">
+                <input class="fieldset__input" type="radio" id="android" name="radio" value="android">
+                <label class="fieldset__label fieldset__label--radio" for="android">Pink на Android</label>
+              </p>
+              <p class="fieldset__field fieldset__field--radio">
+                <input class="fieldset__input" type="radio" id="windows" name="radio" value="windows">
+                <label class="fieldset__label fieldset__label--radio" for="windows">Windows Phone</label>
+              </p>
+            </div>
           </fieldset>
 
           <fieldset class="form__block fieldset fieldset--area">
-              <legend class="fieldset__title fieldset__title--area" for="emotion">Опишите свои эмоции</legend>
-              <textarea class="fieldset__input fieldset__input--area" name="emotion" id="emotion" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <legend class="fieldset__title fieldset__title--area" for="emotion">Опишите свои эмоции</legend>
+            <textarea class="fieldset__input fieldset__input--area" name="emotion" id="emotion" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
 
           <div class="form__post submit">
             <input class="submit__button form-button" type="submit" value="Отправить форму">
-            <p class="submit__text"><b class="submit__required">*</b> &#8212; обязательные поля</p>
+            <p class="submit__text"><b class="submit__required">*</b> &#8212; обязательные <span class="submit__required--hidden">для заполнения</span> поля</p>
           </div>
         </form>
 
