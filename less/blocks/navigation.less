@@ -1,19 +1,13 @@
-.navigation {
-  display: none;
-  position: absolute;
-  top: 70px;
-  left: -4px;
-}
-
 .navigation__list {
   .list-none;
   display: flex;
   flex-wrap: wrap;
+  width: 320px;
 }
 
 .navigation__item {
-  width: 320px;
   flex-shrink: 1;
+  width: 320px;
   padding-top: 14px;
   padding-bottom: 15px;
   margin: 0 auto;
@@ -30,6 +24,16 @@
 
 .navigation__link {
   color: #ffffff;
+}
+
+@media @tablet {
+  .navigation__list {
+    width: 660px;
+  }
+
+  .navigation__item {
+    width: 660px;
+  }
 }
 
 @media @desktop {
