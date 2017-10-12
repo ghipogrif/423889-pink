@@ -84,7 +84,8 @@
   resize: none;
 }
 
-.fieldset__input-checkbox,.fieldset__input-radio {
+.fieldset__input-checkbox,
+.fieldset__input-radio {
   .visually-hidden;
 }
 
@@ -180,13 +181,6 @@
       order: 1;
       width: 435px;
     }
-
-    &:nth-child(4) {
-      order: 2;
-      width: 435px;
-      padding-left: 74px;
-      padding-top: 45px;
-    }
   }
 
   .fieldset__label {
@@ -235,6 +229,11 @@
   }
 
   .fieldset:nth-child(4) {
+    order: 2;
+    width: 435px;
+    padding-left: 74px;
+    padding-top: 45px;
+
     .fieldset__wrapper {
       flex-direction: column;
     }
