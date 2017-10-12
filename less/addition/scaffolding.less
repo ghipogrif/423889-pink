@@ -1,8 +1,7 @@
 body {
   position: relative;
-  // width: 320px;
-  // width: 660px;
-  // width: 1200px;
+  width: 320px;
+  margin: 0 auto;
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
   font-size: 14px;
@@ -17,4 +16,16 @@ img {
 
 a {
   text-decoration: none;
+}
+
+@media @tablet {
+  body {
+    width: 660px;
+  }
+}
+
+@media @desktop {
+  body {
+    width: 1200px;
+  }
 }
