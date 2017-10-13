@@ -17,6 +17,7 @@
 .editor__container form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .editor__image {
@@ -52,15 +53,14 @@
 }
 
 @media @tablet {
-  .editor__container form {
-    justify-content: space-between;
-  }
-
   .editor__container {
     padding: 57px 20px 54px 20px;
   }
 
   .editor__list-edit {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
     margin: 0;
   }
 
@@ -83,6 +83,25 @@
 
 @media @desktop {
   .editor {
-    height: 514px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .editor__container {
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .editor__button-container {
+    width: auto;
+  }
+
+  .editor__post-container {
+    display: flex;
+    width: 410px;
+
+    .button-link {
+      width: 183px;
+    }
   }
 }

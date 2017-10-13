@@ -2,33 +2,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 80px 20px 0 20px;
+  padding: 80px 20px 400px 20px;
   background-color: #f2f2f2;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 320px;
-    height: 35px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position: 0 -70px;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 157px;
-    height: 277px;
-    margin: 0 auto;
-    margin-top: 41px;
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 -1px;
-  }
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 500px;
 }
 
 .advantage__title {
@@ -55,20 +33,15 @@
   .advantage {
     display: flex;
     justify-content: space-between;
-    padding-top: 0;
-
-    &::after {
-      order: 1;
-      width: 266px;
-      height: 481px;
-      margin: 0;
-    }
+    padding-top: 88px;
+    padding-left: 350px;
+    padding-bottom: 30px;
+    background-position: left;
   }
 
   .advantage__list {
     order: 2;
     width: 310px;
-    padding-top: 88px;
     padding-bottom: 42px;
     text-align: left;
   }
@@ -82,10 +55,11 @@
 
 @media @desktop {
   .advantage {
-    width: 939px;
     padding-left: 130px;
     padding-right: 130px;
     padding-top: 0;
+    background: none;
+    background-color: #f2f2f2;
   }
 
   .advantage::after {
@@ -124,27 +98,33 @@
     line-height: 30px;
   }
 
-  .advantage__title--first {
-    width: 190px;
+  .advantage__item:nth-child(1) {
+    .advantage__title {
+      width: 190px;
+    }
+
+    .advantage__text {
+      width: 244px;
+    }
   }
 
-  .advantage__text--first {
-    width: 244px;
+  .advantage__item:nth-child(2) {
+    .advantage__title {
+      width: 200px;
+    }
+
+    .advantage__text {
+      width: 228px;
+    }
   }
 
-  .advantage__title--second {
-    width: 200px;
-  }
+  .advantage__item:nth-child(3) {
+    .advantage__title {
+      width: 230px;
+    }
 
-  .advantage__text--second {
-    width: 228px;
-  }
-
-  .advantage__title--third {
-    width: 230px;
-  }
-
-  .advantage__text--third {
-    width: 236px;
+    .advantage__text {
+      width: 236px;
+    }
   }
 }

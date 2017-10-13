@@ -9,6 +9,8 @@
 }
 
 .card__info {
+  display: flex;
+  flex-wrap: wrap;
   padding: 18px 20px 20px 17px;
   text-align: left;
   background-color: #f2f2f2;
@@ -34,6 +36,7 @@
 }
 
 .card__text {
+  width: 100%;
   margin: 0;
   margin-bottom: 7px;
   font-weight: normal;
@@ -71,15 +74,27 @@
     width: 620px;
     margin: 0 auto;
     padding: 24px 20px 16px 28px;
+
+    .card__name {
+      order: 1;
+    }
+
+    .card__time {
+      order: 2;
+    }
+
+    .card__like-block {
+      order: 3;
+      margin-left: auto;
+    }
+
+    .card__text {
+      order: 4;
+    }
   }
 
   .card__info {
     position: relative;
-  }
-
-  .card__like-block--panorama {
-    position: absolute;
-    top: 0; // Временно
   }
 
   .card__container-image:not(.card__container-image--panorama) {
@@ -116,11 +131,6 @@
 
   .card__info {
     position: relative;
-  }
-
-  .card__like-block--panorama {
-    position: absolute;
-    top: 0; // Временно
   }
 
   .card__container-image:not(.card__container-image--panorama) {
