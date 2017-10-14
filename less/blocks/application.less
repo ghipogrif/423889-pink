@@ -1,26 +1,65 @@
 .application {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 16px 20px;
+  margin-top: 427px;
+  background: #1d2631;
 }
 
 .application__header {
-  .visually-hidden;
+  display: none;
   color: #ffffff;
 }
 
 .application__list {
   display: flex;
-  .list-none;
-  margin-bottom: 28px;
   justify-content: space-around;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: baseline;
+  .list-none;
+  margin-bottom: 22px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .application__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
   color: #ffffff;
 }
 
 .application__download {
   display: block;
-  margin-top: 28px;
   margin-bottom: 32px;
+}
+
+@media @tablet {
+  .application {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 0;
+    margin-top: auto;
+    padding-left: 20px;
+    background: none;
+  }
+
+  .application__header {
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+}
+
+@media @desktop {
+  .application {
+    width: 300px;
+  }
+
+  .application__header {
+    display: inline-block;
+    width: 240px;
+    margin-bottom: 50px;
+  }
 }

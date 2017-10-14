@@ -1,4 +1,15 @@
+.submit {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .submit__text {
+  width: 184px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
@@ -6,4 +17,43 @@
 
 .submit__required {
   color: #d22856;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media @tablet {
+  .submit {
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0;
+    padding-top: 67px;
+    padding-bottom: 47px;
+  }
+
+  .submit__text {
+    width: 177px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+@media @desktop {
+  .submit {
+    order: 6;
+    padding: 0;
+    padding-top: 65px;
+  }
+
+  .submit__text {
+    margin: 0;
+    width: auto;
+  }
+
+  .submit__required--hidden {
+    display: inline-block;
+  }
 }
