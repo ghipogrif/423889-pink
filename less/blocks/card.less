@@ -76,8 +76,7 @@
 
   .card__like-block {
     order: 3;
-    justify-content: space-between;
-    width: 100%;
+    margin-top: auto;
   }
 
   .card__like-block--panorama {
@@ -91,8 +90,8 @@
     }
   }
 
-  .card__text {
-    margin-bottom: 0;
+  .card__text:not(.card__text--panorama) {
+    margin-bottom: 9px;
   }
 
   .card__like {
@@ -102,13 +101,12 @@
 
   .card__like-quantity {
     order: 1;
-
   }
 
   .card__info--panorama {
     width: 620px;
     margin: 0 auto;
-    padding: 24px 10px 25px 28px;
+    padding: 24px 10px 14px 28px;
 
     .card__name {
       order: 1;
@@ -142,6 +140,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
+
+    .card__info {
+      flex-direction: column;
+      padding-right: 32px;
+    }
+
+    .card__like {
+      margin-right: 0;
+    }
+  }
+
+  .card__caption {
+    margin: 0;
   }
 }
 
