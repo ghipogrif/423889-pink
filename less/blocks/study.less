@@ -8,10 +8,6 @@
   margin-bottom: 9px;
 }
 
-.study__hidden {
-  display: none;
-}
-
 .study__link {
   line-height: 17px;
   color: #d22856;
@@ -24,29 +20,14 @@
 
 @media @tablet {
   .study {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 310px;
-      min-height: 335px;    //Временно
-      background-color: red; //Временно
-    }
-  }
-
-  .study__hidden {
     display: block;
+    padding: 96px 20px 96px 329px;
+    text-align: left;
   }
 
   .study__container {
     width: 310px;
     text-align: left;
-    padding-top: 96px;
   }
 
   .study__title {
@@ -59,25 +40,17 @@
 
 @media @desktop {
   .study {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 34px 130px 77px 130px;
+    padding: 80px 130px 113px 497px;
     background-color: #f2f2f2;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 310px;
-      min-height: 335px;    //Временно
-      background-color: red; //Временно
-    }
   }
 
   .study__container {
     width: 576px;
-    padding-top: 96px;
-    text-align: left;
+  }
+
+  .study__title {
+    width: 310px;
+    margin: 0;
   }
 
   .study__text {
