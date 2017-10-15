@@ -38,7 +38,7 @@
 .card__text {
   width: 100%;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -46,7 +46,7 @@
 
 .card__like-block {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .card__like {
@@ -70,10 +70,45 @@
     height: 509px;
   }
 
+  .card__item:first-child {
+    margin-bottom: 20px;
+  }
+
+  .card__like-block {
+    order: 3;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .card__like-block--panorama {
+    align-self: auto;
+    justify-content: flex-end;
+    width: auto;
+    margin-left: auto;
+
+    .card__like {
+      margin-left: 18px;
+    }
+  }
+
+  .card__text {
+    margin-bottom: 0;
+  }
+
+  .card__like {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .card__like-quantity {
+    order: 1;
+
+  }
+
   .card__info--panorama {
     width: 620px;
     margin: 0 auto;
-    padding: 24px 20px 16px 28px;
+    padding: 24px 10px 25px 28px;
 
     .card__name {
       order: 1;
@@ -83,18 +118,11 @@
       order: 2;
     }
 
-    .card__like-block {
-      order: 3;
-      margin-left: auto;
-    }
-
     .card__text {
       order: 4;
+      margin-top: 0;
+      padding-right: 10px;
     }
-  }
-
-  .card__info {
-    position: relative;
   }
 
   .card__container-image:not(.card__container-image--panorama) {
@@ -106,7 +134,7 @@
     width: 300px;
     min-height: 155px;
     box-sizing: border-box;
-    padding: 24px 20px 16px 28px;
+    padding: 24px 20px 22px 28px;
   }
 
   .card__list {
