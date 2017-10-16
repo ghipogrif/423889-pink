@@ -5,7 +5,11 @@
 }
 
 .card__item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+}
+
+.card__caption {
+  margin: 0;
 }
 
 .card__info {
@@ -150,16 +154,22 @@
       margin-right: 0;
     }
   }
-
-  .card__caption {
-    margin: 0;
-  }
 }
 
 @media @desktop {
   .card__photo--panorama {
     width: 1200px;
     height: 506px;
+  }
+
+  .card__item:first-child {
+    margin-bottom: 0;
+  }
+
+  .card__list {
+    .card__item {
+      margin-bottom: 54px;
+    }
   }
 
   .card__info--panorama {
@@ -181,7 +191,7 @@
     width: 300px;
     min-height: 155px;
     box-sizing: border-box;
-    padding: 24px 20px 16px 28px;
+    padding: 24px 31px 23px 28px;
   }
 
   .card__list {

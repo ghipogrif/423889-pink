@@ -68,6 +68,27 @@
     padding: 57px 20px 54px 20px;
   }
 
+  .editor__svg-fill {
+    fill: #d22856;
+  }
+
+  .editor__svg {
+    &--first {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--second {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--third {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
   .editor__range-controls {
     margin-top: auto;
   }
@@ -81,6 +102,13 @@
     align-items: flex-start;
     flex-direction: column;
     margin: 0;
+    padding: 0;
+  }
+
+  .editor__item-button {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #dddfe0;
   }
 
   .editor__image {
