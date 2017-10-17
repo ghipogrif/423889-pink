@@ -1,7 +1,5 @@
 .reviews {
-  padding-top: 45px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 45px 20px 43px 20px;
 }
 
 .reviews__hidden {
@@ -33,7 +31,7 @@
 @media @tablet {
   .reviews {
     padding-top: 29px;
-    padding-bottom: 26px;
+    padding-bottom: 28px;
   }
 
   .reviews__item {
@@ -71,14 +69,15 @@
 @media @desktop {
   .reviews {
     padding-top: 185px;
+    padding-bottom: 46px;
   }
 
   .reviews__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .reviews__title {
@@ -105,5 +104,9 @@
     margin: 0;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }
