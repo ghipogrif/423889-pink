@@ -7,6 +7,13 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 506px;
+  background-size: 157px auto;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .advantage {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
 }
 
 .advantage__title {
@@ -36,7 +43,17 @@
     padding-top: 88px;
     padding-bottom: 0;
     padding-left: 330px;
-    background-position: left;
+    background: url("../img/iphone-screen-3-tablet@1x.png") 24px 17px;
+    background-size: 268px auto;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .advantage {
+      background: url("../img/iphone-screen-3-tablet@2x.png") 24px 17px;
+      background-size: 268px auto;
+      background-repeat: no-repeat;
+    }
   }
 
   .advantage__list {
@@ -74,16 +91,40 @@
 
   .advantage__item {
     width: 313px;
+    padding-top: 359px;
     text-align: center;
+  }
 
-    &::before {
-      content: "";
-      display: block;
-      width: 170px;
-      height: 300px;
-      margin: 0 auto;
-      margin-bottom: 59px;
-      background-color: red; //Временно
+  .advantage__item {
+    &:nth-child(1) {
+      background: url("../img/iphone-screen-1-desktop@1x.png") center no-repeat;
+    }
+
+    &:nth-child(2) {
+      background: url("../img/iphone-screen-2-desktop@1x.png") center no-repeat;
+    }
+
+    &:nth-child(3) {
+      background: url("../img/iphone-screen-3-desktop@1x.png") center no-repeat;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .advantage__item {
+      &:nth-child(1) {
+        background: url("../img/iphone-screen-1-desktop@2x.png") center 0 no-repeat;
+        background-size: 292px auto;
+      }
+
+      &:nth-child(2) {
+        background: url("../img/iphone-screen-2-desktop@2x.png") center 0 no-repeat;
+        background-size: 292px auto;
+      }
+
+      &:nth-child(3) {
+        background: url("../img/iphone-screen-3-desktop@2x.png") center 0 no-repeat;
+        background-size: 292px auto;
+      }
     }
   }
 
