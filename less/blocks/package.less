@@ -1,23 +1,8 @@
 .package {
-  box-sizing: border-box; // Временно
-  height: 470px;  // Временно
   position: relative;
-  padding-top: 87px;
+  padding: 90px 20px 44px 20px;
   background-color: #f2f2f2;
   overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 320px;
-    height: 35px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-    background-position: 0 -70px;
-  }
 }
 
 .package__header {
@@ -29,16 +14,23 @@
   border: 2px solid #f2f2f2;
 }
 
+.package__table-block {
+  margin-left: 50%;
+}
+
 .package__table {
+  width: 836px;
   line-height: 30px;
   border-collapse: collapse;
+  transform: translateX(-50%);
 }
 
 .package__description {
   position: relative;
-  padding: 24px 0 24px 21px;
+  padding: 14px 0 15px 21px;
   font-weight: normal;
   text-align: left;
+  text-transform: uppercase;
   border: 2px solid #e5e5e5;
 
   // &--no::after {
@@ -75,4 +67,89 @@
 .package__price {
   font-weight: lighter;
   font-size: 24px;
+}
+
+.package__description--empty,
+.package__header--empty {
+  display: none;
+}
+
+@media @tablet {
+  .package {
+    padding: 83px 20px 17px 20px;
+  }
+
+  .package__table {
+    width: 620px;
+    transform: none;
+  }
+
+  .package__table-block {
+    margin-left: 0;
+  }
+
+  .package__price {
+    font-size: 18px;
+  }
+
+  .package__title {
+    font-size: 16px;
+  }
+
+  .package__header {
+    padding-top: 12px;
+    padding-bottom: 5px;
+  }
+
+  .package__description {
+    padding: 6px 0 8px 17px;
+    text-transform: inherit;
+    background-color: #ffffff;
+  }
+
+  .package__description--empty,
+  .package__header--empty {
+    display: table-cell;
+  }
+
+  .package__text--hidden {
+    display: none;
+  }
+
+  .package__description,
+  .package__title {
+    width: 25%;
+  }
+}
+
+@media @desktop {
+  .package {
+    padding: 139px 10px 96px 10px;
+  }
+
+  .package__table {
+    width: 940px;
+  }
+
+  .package__title {
+    font-size: 18px;
+  }
+
+  .package__price {
+    font-size: 24px;
+  }
+
+  .package__header {
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+
+  .package__description {
+    padding: 12px 0 16px 23px;
+    font-size: 18px;
+  }
+
+  .package__toggles {
+    display: none;
+  }
 }

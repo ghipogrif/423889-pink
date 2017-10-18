@@ -8,10 +8,6 @@
   margin: 0 auto;
 }
 
-.title-block__text--hidden {
-  display: none;
-}
-
 .title-block__text--photo {
   width: 242px;
 }
@@ -24,7 +20,16 @@
   padding-bottom: 0;
 }
 
+.title-block__text--hidden {
+  display: none;
+}
+
 @media @tablet {
+  .title-block {
+    padding-top: 92px;
+    padding-bottom: 76px;
+  }
+
   .title-block__text {
     font-size: 18px;
   }
@@ -48,6 +53,11 @@
 }
 
 @media @desktop {
+  .title-block {
+    padding-top: 92px;
+    padding-bottom: 88px;
+  }
+
   .title-block--form {
     padding-top: 92px;
     padding-bottom: 70px;
@@ -62,11 +72,6 @@
     display: inline-block;
   }
 
-  .title-block--photo {
-    padding: 0;
-    padding-top: 92px;
-    padding-bottom: 88px;
-  }
 
   .title-block__text--photo {
     width: 580px;

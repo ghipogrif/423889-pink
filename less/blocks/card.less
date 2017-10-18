@@ -5,13 +5,17 @@
 }
 
 .card__item {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+}
+
+.card__caption {
+  margin: 0;
 }
 
 .card__info {
   display: flex;
   flex-wrap: wrap;
-  padding: 18px 20px 20px 17px;
+  padding: 16px 20px 20px 17px;
   text-align: left;
   background-color: #f2f2f2;
 
@@ -38,7 +42,7 @@
 .card__text {
   width: 100%;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -46,7 +50,7 @@
 
 .card__like-block {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .card__like {
@@ -70,10 +74,43 @@
     height: 509px;
   }
 
+  .card__item:first-child {
+    margin-bottom: 20px;
+  }
+
+  .card__like-block {
+    order: 3;
+    margin-top: auto;
+  }
+
+  .card__like-block--panorama {
+    align-self: auto;
+    justify-content: flex-end;
+    width: auto;
+    margin-left: auto;
+
+    .card__like {
+      margin-left: 18px;
+    }
+  }
+
+  .card__text:not(.card__text--panorama) {
+    margin-bottom: 9px;
+  }
+
+  .card__like {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .card__like-quantity {
+    order: 1;
+  }
+
   .card__info--panorama {
     width: 620px;
     margin: 0 auto;
-    padding: 24px 20px 16px 28px;
+    padding: 24px 10px 14px 28px;
 
     .card__name {
       order: 1;
@@ -83,18 +120,11 @@
       order: 2;
     }
 
-    .card__like-block {
-      order: 3;
-      margin-left: auto;
-    }
-
     .card__text {
       order: 4;
+      margin-top: 0;
+      padding-right: 10px;
     }
-  }
-
-  .card__info {
-    position: relative;
   }
 
   .card__container-image:not(.card__container-image--panorama) {
@@ -106,7 +136,7 @@
     width: 300px;
     min-height: 155px;
     box-sizing: border-box;
-    padding: 24px 20px 16px 28px;
+    padding: 24px 20px 22px 28px;
   }
 
   .card__list {
@@ -114,13 +144,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
+
+    .card__info {
+      flex-direction: column;
+      padding-right: 32px;
+    }
+
+    .card__like {
+      margin-right: 0;
+    }
   }
 }
 
 @media @desktop {
   .card__photo--panorama {
-    width: 1200px;
+    width: 960px;
     height: 506px;
+  }
+
+  .card__item:first-child {
+    margin-bottom: 0;
   }
 
   .card__info--panorama {
@@ -142,15 +185,19 @@
     width: 300px;
     min-height: 155px;
     box-sizing: border-box;
-    padding: 24px 20px 16px 28px;
+    padding: 24px 31px 23px 28px;
   }
 
   .card__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 48px;
+
+    .card__item {
+      margin-bottom: 54px;
+    }
   }
 }

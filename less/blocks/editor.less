@@ -51,15 +51,46 @@
   width: 280px;
 }
 
+.editor__scale {
+  margin-top: 27px;
+  margin-bottom: 74px;
+}
+
 .editor__range-toggle {
-  width: 100%;
+  width: 240px;
   height: 2px;
+  margin: 0 auto;
   background: black;
 }
 
 @media @tablet {
   .editor__container {
     padding: 57px 20px 54px 20px;
+  }
+
+  .editor__svg-fill {
+    fill: #d22856;
+  }
+
+  .editor__scale {
+    display: none;
+  }
+
+  .editor__svg {
+    &--first {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--second {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--third {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .editor__range-controls {
@@ -71,10 +102,30 @@
   }
 
   .editor__list-edit {
-    width: 100%;
+    width: auto;
     align-items: flex-start;
     flex-direction: column;
     margin: 0;
+    padding: 0;
+  }
+
+  .editor__item-button {
+    display: flex;
+    width: 275px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dddfe0;
+
+    &:nth-child(1) {
+      padding: 0 18px 24px 3px;
+    }
+
+    &:nth-child(2) {
+      padding: 28px 18px 22px 3px;
+    }
+
+    &:nth-child(3) {
+      padding: 26px 18px 27px 7px;
+    }
   }
 
   .editor__image {
@@ -86,14 +137,52 @@
   .editor__button-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
     width: 300px;
+    padding: 9px 0 0 26px;
+  }
+
+  .editor__label {
+    line-height: 0;
+  }
+
+  .editor__post {
+    margin-bottom: 22px;
+  }
+
+  .editor__button-link {
+    margin: 0;
+
+    .button-link {
+      box-sizing: border-box;
+      width: 260px;
+      padding-left: 76px;
+      padding-right: 84px;
+    }
   }
 }
 
 @media @desktop {
   .editor {
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .editor__item-button {
+    width: 410px;
+
+    &:nth-child(1) {
+      padding: 0 18px 10px 0;
+    }
+
+    &:nth-child(2) {
+      padding: 16px 18px 12px 0;
+    }
+
+    &:nth-child(3) {
+      padding: 18px 18px 18px 6px;
+    }
   }
 
   .editor__container {
@@ -103,6 +192,7 @@
 
   .editor__button-container {
     width: auto;
+    padding-top: 0;
   }
 
   .editor__post-container {
@@ -111,7 +201,30 @@
 
     .button-link {
       width: 183px;
+      padding-left: 0;
+      padding-right: 0;
       margin-bottom: 0;
+    }
+  }
+
+  .editor__post {
+    margin-right: 44px;
+  }
+
+  .editor__svg {
+    &--first {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--second {
+      width: 48px;
+      height: 44px;
+    }
+
+    &--third {
+      width: 32px;
+      height: 32px;
     }
   }
 }
