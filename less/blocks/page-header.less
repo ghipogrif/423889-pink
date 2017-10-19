@@ -18,7 +18,7 @@
 
 .page-header--block {
   min-height: 237px;
-  background: url("../img/bg-back-mobile@1x.jpg") 0 bottom no-repeat;
+  background: url(../img/bg-back-mobile@1x.jpg) center 249px no-repeat;;
   background-color: #2c3c4c;
 }
 
@@ -29,8 +29,8 @@
   }
 
   .page-header--block {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-size: 100px auto;
+    background: url("../img/bg-back-mobile@2x.jpg") center 254px no-repeat;
+    background-size: 686px auto;
   }
 }
 
@@ -43,7 +43,45 @@
 }
 
 .page-header__toogle {
+  position: relative;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  width: 29px;
+  height: 29px;
+  padding: 0;
   margin-left: auto;
+  background:  0 0;
+  border: 0;
+  user-select: none;
+}
+
+.page-header__toogle-cross {
+  position: relative;
+  display: inline-block;
+  width: 29px;
+  height: 3px;
+  vertical-align: bottom;
+  background: 0 0;
+
+   &::before, &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform-origin: 50% 50%;
+  }
+
+  &::before {
+    transform: rotate3d(0,0,1,45deg);
+  }
+
+  &::after {
+    transform: rotate3d(0,0,1,-45deg);
+  }
 }
 
 .page-header__background-title {
@@ -84,7 +122,7 @@
 @media @tablet {
   .page-header--block {
     min-height: 440px;
-    background: #2c3c4c url("../img/bg-back-mobile@1x.jpg") -190px -10px no-repeat;
+    background: #2c3c4c url("../img/bg-back-mobile@1x.jpg") center 420px no-repeat;
   }
 
   .page-header--main {
@@ -98,6 +136,11 @@
       background: url("../img/iphone-hand-tablet@2x.png") -19px 439px no-repeat, url("../img/bg-back-tablet@2x.jpg") center 259px no-repeat;
       background-size: 703px auto, auto 729px;
     }
+
+    .page-header--block {
+      background: url("../img/bg-back-tablet@2x.jpg") center 286px no-repeat;
+      background-size: 1015px auto;
+    }
   }
 
   .page-header__top {
@@ -110,7 +153,7 @@
   }
 
   .page-header__top--block {
-    padding: 26px 20px 43px;
+    padding: 26px 20px 36px;
   }
 
   .page-header__svg-mobile {
@@ -179,10 +222,19 @@
     background-size: 1049px auto, auto 853px
   }
 
+  .page-header--block {
+    background: url("../img/bg-back-desktop@1x.jpg") center -12px no-repeat;
+  }
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header--main {
       background: url("../img/iphone-hand-desktop@2x.png") 26px bottom no-repeat, url("../img/bg-back-desktop@2x.jpg") center 0px no-repeat;
       background-size: 1049px auto, auto 853px;
+    }
+
+    .page-header--block {
+      background: url(../img/bg-back-desktop@2x.jpg) center 15px no-repeat;
+      background-size: 2544px auto;
     }
   }
 

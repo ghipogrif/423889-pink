@@ -69,17 +69,6 @@
   line-height: 30px;
   font-weight: normal;
   color: #283645;
-  border: 2px solid #e5e5e5;
-  outline: none;
-
-  &:hover {
-    border: 2px solid #283645;
-  }
-
-  &:active,
-  &:focus {
-    border: 2px solid #d22856;
-  }
 }
 
 .fieldset:nth-child(1),
@@ -175,6 +164,23 @@
 .fieldset__input-checkbox,
 .fieldset__input-radio {
   .visually-hidden;
+}
+
+.fieldset__input[type="text"],
+.fieldset__input[type="email"],
+.fieldset__input[type="tel"],
+.fieldset__textarea {
+  border: 2px solid #e5e5e5;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:active {
+    border: 2px solid #d22856;
+  }
+
 }
 
 @media @tablet {
