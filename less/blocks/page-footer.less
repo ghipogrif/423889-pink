@@ -13,12 +13,30 @@
   margin-bottom: 32px;
 }
 
+.page-footer__logo-desktop {
+  display: none;
+}
+
 .page-footer__copyright {
   display: flex;
   align-items: center;
   width: 130px;
   margin: 0 auto;
   margin-top: 40px;
+}
+
+.page-footer__copyright-link {
+  &:hover {
+    .page-footer__copyright-fill {
+      fill: #283645;
+    }
+  }
+
+  &:active {
+    .page-footer__copyright-fill {
+      fill: #bec2c7;
+    }
+  }
 }
 
 .page-footer__copyright-link {
@@ -67,6 +85,14 @@
 
   .page-footer--photo {
     padding-top: 96px;
+  }
+
+  .page-footer__logo-desktop {
+    display: inline-block;
+  }
+
+  .page-footer__logo-tablet {
+    display: none;
   }
 
   .page-footer__copyright {

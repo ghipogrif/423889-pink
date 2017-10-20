@@ -153,8 +153,32 @@
   box-shadow: 0 0 0 2px #e5e5e5;
 }
 
-.fieldset__label-radio::before {
-  border-radius: 50%;
+.fieldset__label-radio {
+  &:hover {
+    &::before {
+      box-shadow: 0 0 0 2px #283645;
+    }
+  }
+
+  &:active {
+    &::before {
+      box-shadow: 0 0 0 2px #d22856;
+    }
+  }
+}
+
+.fieldset__label-checkbox {
+  &:hover {
+    &::before {
+      border-color: #283645;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #d22856;
+    }
+  }
 }
 
 .fieldset__title--hidden {
