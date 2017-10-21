@@ -2,13 +2,14 @@
   position: relative;
   width: 320px;
   height: 199px;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
+  background: url("../img/bg-triangle-white-footer.svg") center 0 no-repeat, url("../img/bg-map-mobile@1x.png") 0 2px no-repeat;
+  background-size: 320px auto, 320px auto;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .map {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background: url("../img/bg-triangle-white-footer.svg") center 0 no-repeat, url("../img/bg-map-mobile@1x.png") 0 2px no-repeat;
+    background-size: 320px auto, 320px auto;
   }
 }
 
@@ -16,26 +17,31 @@
   .map {
     width: 660px;
     height: 374px;
-    background: url("../img/bg-map-tablet@1x.jpg");
+    background: url("../img/bg-triangle-white-footer.svg") center -10px no-repeat, url("../img/bg-map-mobile@1x.png") 0 2px no-repeat;
+    background-size: 660px auto, 660px auto;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .map {
-      background: url("../img/bg-map-tablet@2x.jpg");
+      background: url("../img/bg-triangle-white-footer.svg") 0 1px no-repeat, url("../img/bg-map-mobile@1x.png") 0 2px no-repeat;
+      background-size: 660px auto, 660px auto;
     }
   }
 }
 
 @media @desktop {
   .map {
-    width: 960px;
+    width: 1200px;
     height: 504px;
-    background: url("../img/bg-map-tablet@1x.jpg");
+    margin: 0 auto;
+    background: url("../img/bg-triangle-white-footer.svg") 0px -1px no-repeat, url("../img/bg-map-mobile@1x.png") 0 2px no-repeat;
+    background-size: 1200px auto, 1200px auto;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .map {
-      background: url("../img/bg-map-desktop@2x.jpg");
+      background: url("../img/bg-triangle-white-footer.svg") 0px -1px no-repeat, url("../img/bg-map-mobile@1x.png") 0 2px no-repeat;
+      background-size: 1200px auto, 1200px auto;
     }
   }
 }

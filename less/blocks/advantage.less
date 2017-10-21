@@ -3,16 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   padding: 80px 20px 318px 20px;
+  background: url("../img/bg-triangle-white.svg") center top no-repeat, url("../img/iphone-screen-mobile@1x.png") center 506px no-repeat;
+  background-size: 320px auto, 157px auto;
   background-color: #f2f2f2;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 506px;
-  background-size: 157px auto;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantage {
-    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background: url("../img/bg-triangle-white.svg") center top no-repeat, url("../img/iphone-screen-mobile@2x.png") center 506px no-repeat;
+    background-size: 320px auto, 157px auto;
+    background-color: #f2f2f2;
   }
 }
 
@@ -43,16 +43,16 @@
     padding-top: 88px;
     padding-bottom: 0;
     padding-left: 330px;
-    background: url("../img/iphone-screen-3-tablet@1x.png") 24px 17px;
-    background-size: 268px auto;
-    background-repeat: no-repeat;
+    background: url("../img/iphone-screen-3-tablet@1x.png") 20px 17px no-repeat, url("../img/bg-triangle-white.svg") -10px top no-repeat;
+    background-size: 268px auto, 660px auto;
+    background-color: #f2f2f2;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantage {
-      background: url("../img/iphone-screen-3-tablet@2x.png") 24px 17px;
-      background-size: 268px auto;
-      background-repeat: no-repeat;
+      background: url("../img/iphone-screen-3-tablet@2x.png") 20px 17px no-repeat, url("../img/bg-triangle-white.svg") -10px top no-repeat;
+      background-size: 268px auto, 660px auto;
+      background-color: #f2f2f2;
     }
   }
 
@@ -75,7 +75,8 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0;
-    background: none;
+    background: url("../img/bg-triangle-white.svg") -10px top no-repeat;
+    background-size: 1200px auto;
     background-color: #f2f2f2;
   }
 
@@ -85,7 +86,11 @@
 
   .advantage__list {
     display: flex;
-    width: 940px;
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     justify-content: space-between;
   }
 

@@ -21,14 +21,32 @@
 
   .study {
     display: block;
-    padding: 96px 20px 96px 329px;
+    padding: 59px 0 60px 0;
     text-align: left;
-    background: url("../img/icon-timer.svg") 24px 59px no-repeat;
-    background-size: 238px auto;
+  }
+
+  .study__wrapper {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .study__img {
+    box-sizing: border-box;
+    width: 310px;
+    padding: 100px 0 0 83px;
+    margin-right: 20px;
+    font-size: 97px;
+    color: #d22856;
+    line-height: 100px;
+    font-weight: bold;
+    background: url("../img/icon-editor-diagram-fill.svg") 38px 54px no-repeat, url("../img/icon-timer.svg") 18px 0 no-repeat;
+    background-size: 205px auto, 242px auto
   }
 
   .study__container {
     width: 310px;
+    padding-top: 38px;
+    padding-bottom: 35px;
     text-align: left;
   }
 
@@ -42,12 +60,8 @@
 
 @media @desktop {
   .study {
-    padding: 80px 10px 113px 377px;
+    padding: 31px 0 60px 0;
     background-color: #f2f2f2;
-  }
-
-  .study__container {
-    width: 576px;
   }
 
   .study__title {
@@ -66,5 +80,25 @@
   .study__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .study__img {
+    width: 310px;
+    padding: 125px 0 0 90px;
+    margin-right: 20px;
+    font-size: 120px;
+    line-height: 130px;
+    background: url("../img/icon-editor-diagram-fill.svg") 33px 70px no-repeat, url("../img/icon-timer.svg") 12px 0 no-repeat;
+    background-size: 251px auto, 298px auto;;
+  }
+
+  .study__container {
+    width: 576px;
+    padding: 89px 0 55px 47px;
+    text-align: left;
+  }
+
+  .study__wrapper {
+    width: 960px;
   }
 }

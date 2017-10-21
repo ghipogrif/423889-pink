@@ -3,6 +3,17 @@
   padding: 90px 20px 44px 20px;
   background-color: #f2f2f2;
   overflow: hidden;
+  background: url("../img/bg-triangle-white.svg") center top no-repeat;
+  background-size: 320px auto;
+  background-color: #f2f2f2;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .package {
+    background: url("../img/bg-triangle-white.svg") center top no-repeat;
+    background-size: 320px auto;
+    background-color: #f2f2f2;
+  }
 }
 
 .package__header {
@@ -23,6 +34,12 @@
   line-height: 30px;
   border-collapse: collapse;
   transform: translateX(-50%);
+}
+
+.package__toggles.slider__toggles {
+  margin-top: 42px;
+  margin-left: 50%;
+  transform: translateX(-169%);
 }
 
 .package__description {
@@ -78,6 +95,23 @@
 @media @tablet {
   .package {
     padding: 83px 20px 17px 20px;
+    background: url("../img/bg-triangle-white.svg") -10px top no-repeat;
+    background-size: 660px auto;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .package {
+      background: url("../img/bg-triangle-white.svg") -10px top no-repeat;
+      background-size: 660px auto;
+      background-color: #f2f2f2;
+    }
+  }
+
+  .package__toggles.slider__toggles {
+    margin: 0 auto;
+    margin-top: 42px;
+    transform: none;
   }
 
   .package__table {
@@ -135,7 +169,23 @@
 
 @media @desktop {
   .package {
-    padding: 139px 10px 96px 10px;
+    padding: 146px 10px 96px 10px;
+    background: url("../img/bg-triangle-white.svg") -10px top no-repeat;
+    background-size: 1200px auto;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .package {
+      background: url("../img/bg-triangle-white.svg") -10px top no-repeat;
+      background-size: 1200px auto;
+      background-color: #f2f2f2;
+    }
+  }
+
+  .package__table-block {
+    width: 960px;
+    margin: 0 auto;
   }
 
   .package__table {
@@ -170,7 +220,7 @@
     }
   }
 
-  .package__toggles {
+  .package__toggles.slider__toggles {
     display: none;
   }
 }

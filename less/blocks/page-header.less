@@ -56,6 +56,10 @@
   user-select: none;
 }
 
+.page-header__toogle-svg {
+  display: none;
+}
+
 .page-header__toogle-cross {
   position: relative;
   display: inline-block;
@@ -112,11 +116,11 @@
 }
 
 .page-header__top {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
-  padding: 21px 20px 12px;
+  padding: 21px 20px 19px;
 }
 
 @media @tablet {
@@ -144,6 +148,7 @@
   }
 
   .page-header__top {
+    width: 660px;
     padding: 20px 20px 42px;
     border-bottom: 1px solid #000001;
   }
@@ -218,7 +223,7 @@
 
   .page-header--main {
     min-height: 853px;
-    background: url("../img/iphone-hand-desktop@1x.png") 26px bottom no-repeat, url("../img/bg-back-desktop@1x.jpg") center 0px no-repeat;
+    background: url("../img/iphone-hand-desktop@1x.png") 221px bottom no-repeat, url("../img/bg-back-desktop@1x.jpg") center 0px no-repeat;
     background-size: 1049px auto, auto 853px
   }
 
@@ -226,9 +231,15 @@
     background: url("../img/bg-back-desktop@1x.jpg") center -12px no-repeat;
   }
 
+  .page-header__menu-content {
+    box-sizing: border-box;
+    padding-left: 11px;
+    padding-right: 15px;
+  }
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-header--main {
-      background: url("../img/iphone-hand-desktop@2x.png") 26px bottom no-repeat, url("../img/bg-back-desktop@2x.jpg") center 0px no-repeat;
+      background: url("../img/iphone-hand-desktop@2x.png") 147px bottom no-repeat, url("../img/bg-back-desktop@2x.jpg") center 0px no-repeat;
       background-size: 1049px auto, auto 853px;
     }
 
@@ -236,6 +247,23 @@
       background: url(../img/bg-back-desktop@2x.jpg) center 15px no-repeat;
       background-size: 2544px auto;
     }
+  }
+
+  .page-header__toogle-svg {
+    display: inline-block;
+  }
+
+  .page-header__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .page-header__menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
   }
 
   .page-header__menu {

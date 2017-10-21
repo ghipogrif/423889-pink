@@ -42,6 +42,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
+  cursor: pointer;
 }
 
 .fieldset__title {
@@ -283,6 +284,34 @@
     }
   }
 
+  .fieldset__field-phone {
+    &::before {
+      content: "";
+      right: 0;
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      width: 62px;
+      height: 63px;
+      background: url("../img/icon-phone.svg") center center no-repeat;
+      background-color: #e5e5e5;
+    }
+  }
+
+  .fieldset__field-mail {
+    &::before {
+      content: "";
+      right: 0;
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      width: 62px;
+      height: 63px;
+      background: url("../img/icon-mail.svg") center center no-repeat;
+      background-color: #e5e5e5;
+    }
+  }
+
   .fieldset:nth-child(4) {
     order: 2;
 
@@ -470,6 +499,8 @@
     display: block;
     margin: 0;
     padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
   }
 
