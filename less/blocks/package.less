@@ -14,12 +14,32 @@
 }
 
 .package__header {
+  position: relative;
   padding-top: 16px;
   padding-bottom: 15px;
   text-align: center;
   color: #ffffff;
   background-color: #283645;
   border: 2px solid #f2f2f2;
+  overflow: hidden;
+}
+
+.package__hit {
+  position: absolute;
+  top: 10px;
+  left: -27px;
+  display: block;
+  box-sizing: border-box;
+  width: 101px;
+  height: 31px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  background-color: #d22856;
+  transform: rotate(-45deg)
 }
 
 .package__table-block {
@@ -114,6 +134,13 @@
   .package__table {
     width: 620px;
     transform: none;
+  }
+
+  .package__hit {
+    top: 6px;
+    left: -26px;
+    width: 91px;
+    height: 29px;
   }
 
   .package__table-block {
@@ -216,6 +243,13 @@
       bottom: 17px;
       left: 102px;
     }
+  }
+
+  .package__hit {
+    top: 12px;
+    left: -32px;
+    width: 115px;
+    height: 29px;
   }
 
   .package__toggles.slider__toggles {
