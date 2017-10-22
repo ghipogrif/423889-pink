@@ -94,6 +94,26 @@
   }
 }
 
+.editor__label {
+  line-height: 0;
+
+  .editor__svg-fill {
+    fill: #b5b9be;
+  }
+
+  &:hover .editor__svg-fill {
+    fill: #8d949b;
+  }
+
+  &:active .editor__svg-fill {
+    fill: #d22856;
+  }
+
+  .editor__svg-fill--active {
+    fill: #d22856;
+  }
+}
+
 .editor__hidden {
   display: none;
 }
@@ -105,6 +125,20 @@
 
   .editor__hidden {
     display: inline-block;
+  }
+
+  .editor__label--active {
+    .editor__svg-fill {
+      fill: #d22856;
+    }
+
+    &:hover .editor__svg-fill {
+      fill: #d22856;
+    }
+
+    &:active .editor__svg-fill {
+      fill: #d22856;
+    }
   }
 
   .editor__svg-fill {
@@ -206,16 +240,8 @@
     padding: 9px 0 0 26px;
   }
 
-  .editor__label {
-    line-height: 0;
-
-    &:hover .editor__svg-fill {
-      fill: #8d949b;
-    }
-  }
-
   .editor__post {
-    margin-bottom: 22px;
+    margin-bottom: 27px;
 
     &:hover {
       color: #ffffff;
