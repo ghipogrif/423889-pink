@@ -26,6 +26,26 @@
   }
 }
 
+.card__photo {
+  display: block;
+}
+
+.card__photo-of-day {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  box-sizing: border-box;
+  padding: 6px 0 6px 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #d22856;
+}
+
 .card__name {
   font-weight: bold;
   font-size: 14px;
@@ -72,6 +92,10 @@
   overflow: hidden;
 }
 
+.card__photo--panorama {
+  position: relative;
+}
+
 @media @tablet {
   .card__photo--panorama {
     width: 660px;
@@ -80,6 +104,11 @@
 
   .card__item:first-child {
     margin-bottom: 20px;
+  }
+
+  .card__photo-of-day {
+    top: 57px;
+    right: 20px;
   }
 
   .card__like-block {
@@ -162,8 +191,13 @@
 
 @media @desktop {
   .card__photo--panorama {
-    width: 960px;
+    width: auto;
     height: 506px;
+  }
+
+  .card__photo {
+    display: block;
+    width: auto;
   }
 
   .card__item:first-child {
@@ -174,6 +208,11 @@
     width: 940px;
     margin: 0 auto;
     padding: 24px 20px 16px 28px;
+  }
+
+  .card__photo-of-day {
+    top: 53px;
+    right: 130px;
   }
 
   .card__info {

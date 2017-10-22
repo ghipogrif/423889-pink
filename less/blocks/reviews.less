@@ -38,8 +38,12 @@
 
 @media @tablet {
   .reviews {
-    padding-top: 29px;
-    padding-bottom: 28px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
+
+  .reviews__toggles {
+    margin-top: 36px;
   }
 
   .reviews__item {
@@ -118,15 +122,15 @@
     width: 50px;
     height: 42px;
     margin-top: 20px;
-  }
 
-  // .reviews__arrow-left {
-  //   background: url("../img/icon-review-arrow-left.svg") no-repeat;
-  // }
-  //
-  // .reviews__arrow-right {
-  //   background: url("../img/icon-review-arrow-right.svg") no-repeat;
-  // }
+    &:hover path {
+      fill: #7e868f;
+    }
+
+    &:active path {
+      fill: #e9ebec;
+    }
+  }
 
   .reviews__hidden {
     order: 3;

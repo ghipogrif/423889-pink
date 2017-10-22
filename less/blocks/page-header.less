@@ -54,6 +54,16 @@
   background:  0 0;
   border: 0;
   user-select: none;
+
+  &:hover .page-header__toogle-cross::before,
+  &:hover .page-header__toogle-cross::after {
+    background-color: #d22856;
+  }
+
+  &:active .page-header__toogle-cross::before,
+  &:active .page-header__toogle-cross::after {
+    opacity: 0.7;
+  }
 }
 
 .page-header__toogle-svg {
@@ -123,10 +133,21 @@
   padding: 21px 20px 19px;
 }
 
+.page-header__logo[href] {
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:active path {
+    fill: #ffffff;
+    opacity: 0.7;
+  }
+}
+
 @media @tablet {
   .page-header--block {
     min-height: 440px;
-    background: #2c3c4c url("../img/bg-back-mobile@1x.jpg") center 420px no-repeat;
+    background: #2c3c4c url(../img/bg-back-tablet@1x.jpg) center 256px no-repeat;
   }
 
   .page-header--main {
@@ -148,6 +169,7 @@
   }
 
   .page-header__top {
+    align-items: flex-end;
     width: 660px;
     padding: 20px 20px 42px;
     border-bottom: 1px solid #000001;
@@ -228,7 +250,7 @@
   }
 
   .page-header--block {
-    background: url("../img/bg-back-desktop@1x.jpg") center -12px no-repeat;
+    background: url("../img/bg-back-desktop@1x.jpg") center 1px no-repeat;
   }
 
   .page-header__menu-content {

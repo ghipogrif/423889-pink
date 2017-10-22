@@ -11,6 +11,14 @@
 .page-footer__logo-link {
   margin: 0 auto;
   margin-bottom: 32px;
+
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .page-footer__logo-desktop {
@@ -63,7 +71,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 34px 8px 30px;
+    width: 660px;
+    box-sizing: border-box;
+    padding: 34px 20px 30px 18px;
   }
 
   .page-footer--index {
@@ -111,6 +121,14 @@
 
   .page-footer__logo-tablet {
     display: none;
+  }
+
+  .page-footer__container--index {
+    width: 960px;
+    box-sizing: border-box;
+    padding-left: 9px;
+    padding-right: 10px;
+    padding-top: 69px;
   }
 
   .page-footer__container--photo {

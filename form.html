@@ -5,6 +5,10 @@
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill-min.js" async></script>
   </head>
   <body>
     <header class="page-header page-header--block">
@@ -170,7 +174,7 @@
             <legend class="fieldset__title">С каким приложением путешествовали?</legend>
             <div class="fieldset__wrapper">
               <p class="fieldset__field">
-                <input class="fieldset__input-radio" type="radio" id="ios" name="radio" value="ios">
+                <input class="fieldset__input-radio" type="radio" id="ios" name="radio" value="ios" checked>
                 <label class="fieldset__label fieldset__label-radio" for="ios">Pink для iOS</label>
               </p>
               <p class="fieldset__field">
